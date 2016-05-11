@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android/app/libs/android-async-http-1.4.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/libs/netty-3.6.6.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/libs/universal-image-loader-1.9.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

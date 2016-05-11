@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="3rdParty">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/win-client/3rdParty/yaolog.zip!/" />
+      <root url="jar://$PROJECT_DIR$/win-client/3rdParty/protobuf-2.6.1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/win-client/3rdParty/cximage600_full.zip!/" />
+      <root url="jar://$PROJECT_DIR$/win-client/3rdParty/jsoncpp-master.zip!/" />
+      <root url="jar://$PROJECT_DIR$/win-client/3rdParty/libogg-1.3.2.zip!/" />
+      <root url="jar://$PROJECT_DIR$/win-client/3rdParty/httpclient-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

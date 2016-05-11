@@ -1,0 +1,2037 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac425eec-46ee-4637-a436-dc41f6aa80b2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/DB/DBInterface.java" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/DB/DBInterface.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMMessageManager.java" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMMessageManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMSocketManager.java" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMSocketManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/service/IMService.java" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/service/IMService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/ui/adapter/ChatAdapter.java" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/ui/adapter/ChatAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/ui/widget/IMBaseImageView.java" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/ui/widget/IMBaseImageView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/utils/Logger.java" afterPath="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/utils/Logger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/res/layout/tt_activity_login.xml" afterPath="$PROJECT_DIR$/android/app/src/main/res/layout/tt_activity_login.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/app/src/main/res/layout/tt_activity_message.xml" afterPath="$PROJECT_DIR$/android/app/src/main/res/layout/tt_activity_message.xml" />
+    </list>
+    <ignored path="TeamTalk.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TeamTalk" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="IMLogin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/protobuf/IMLogin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1653" column="68" selection-start-line="1653" selection-start-column="56" selection-end-line="1653" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#203740#0" expanded="false" />
+                <element signature="e#1210#1211#0" expanded="false" />
+                <element signature="e#1246#1247#0" expanded="false" />
+                <element signature="e#1301#1302#0" expanded="false" />
+                <element signature="e#1337#1338#0" expanded="false" />
+                <element signature="e#3493#3494#0" expanded="false" />
+                <element signature="e#3520#3521#0" expanded="false" />
+                <element signature="e#7930#7931#0" expanded="false" />
+                <element signature="e#7981#7982#0" expanded="false" />
+                <element signature="e#8085#8086#0" expanded="false" />
+                <element signature="e#8123#8124#0" expanded="false" />
+                <element signature="e#8239#8240#0" expanded="false" />
+                <element signature="e#8298#8299#0" expanded="false" />
+                <element signature="e#9336#9337#0" expanded="false" />
+                <element signature="e#9365#9366#0" expanded="false" />
+                <element signature="e#12409#12410#0" expanded="false" />
+                <element signature="e#12445#12446#0" expanded="false" />
+                <element signature="e#12500#12501#0" expanded="false" />
+                <element signature="e#12536#12537#0" expanded="false" />
+                <element signature="e#15786#15787#0" expanded="false" />
+                <element signature="e#15813#15814#0" expanded="false" />
+                <element signature="e#16154#16155#0" expanded="false" />
+                <element signature="e#16216#16217#0" expanded="false" />
+                <element signature="e#16437#16438#0" expanded="false" />
+                <element signature="e#16469#16470#0" expanded="false" />
+                <element signature="e#16664#16665#0" expanded="false" />
+                <element signature="e#16726#16727#0" expanded="false" />
+                <element signature="e#17897#17898#0" expanded="false" />
+                <element signature="e#17959#17960#0" expanded="false" />
+                <element signature="e#19107#19108#0" expanded="false" />
+                <element signature="e#19169#19170#0" expanded="false" />
+                <element signature="e#19258#19259#0" expanded="false" />
+                <element signature="e#19284#19285#0" expanded="false" />
+                <element signature="e#24991#24992#0" expanded="false" />
+                <element signature="e#25042#25043#0" expanded="false" />
+                <element signature="e#25146#25147#0" expanded="false" />
+                <element signature="e#25184#25185#0" expanded="false" />
+                <element signature="e#25652#25653#0" expanded="false" />
+                <element signature="e#25711#25712#0" expanded="false" />
+                <element signature="e#29066#29067#0" expanded="false" />
+                <element signature="e#29132#29133#0" expanded="false" />
+                <element signature="e#29369#29370#0" expanded="false" />
+                <element signature="e#29405#29406#0" expanded="false" />
+                <element signature="e#30370#30371#0" expanded="false" />
+                <element signature="e#30436#30437#0" expanded="false" />
+                <element signature="e#32502#32503#0" expanded="false" />
+                <element signature="e#32568#32569#0" expanded="false" />
+                <element signature="e#34622#34623#0" expanded="false" />
+                <element signature="e#34688#34689#0" expanded="false" />
+                <element signature="e#34785#34786#0" expanded="false" />
+                <element signature="e#34815#34816#0" expanded="false" />
+                <element signature="e#38088#38089#0" expanded="false" />
+                <element signature="e#38124#38125#0" expanded="false" />
+                <element signature="e#38177#38178#0" expanded="false" />
+                <element signature="e#38213#38214#0" expanded="false" />
+                <element signature="e#42049#42050#0" expanded="false" />
+                <element signature="e#42076#42077#0" expanded="false" />
+                <element signature="e#42359#42360#0" expanded="false" />
+                <element signature="e#42421#42422#0" expanded="false" />
+                <element signature="e#43710#43711#0" expanded="false" />
+                <element signature="e#43772#43773#0" expanded="false" />
+                <element signature="e#45019#45020#0" expanded="false" />
+                <element signature="e#45081#45082#0" expanded="false" />
+                <element signature="e#45545#45546#0" expanded="false" />
+                <element signature="e#45607#45608#0" expanded="false" />
+                <element signature="e#45772#45773#0" expanded="false" />
+                <element signature="e#45804#45805#0" expanded="false" />
+                <element signature="e#46023#46024#0" expanded="false" />
+                <element signature="e#46085#46086#0" expanded="false" />
+                <element signature="e#53497#53498#0" expanded="false" />
+                <element signature="e#53548#53549#0" expanded="false" />
+                <element signature="e#53652#53653#0" expanded="false" />
+                <element signature="e#53690#53691#0" expanded="false" />
+                <element signature="e#54313#54314#0" expanded="false" />
+                <element signature="e#54372#54373#0" expanded="false" />
+                <element signature="e#58164#58165#0" expanded="false" />
+                <element signature="e#58230#58231#0" expanded="false" />
+                <element signature="e#60633#60634#0" expanded="false" />
+                <element signature="e#60699#60700#0" expanded="false" />
+                <element signature="e#62910#62911#0" expanded="false" />
+                <element signature="e#62976#62977#0" expanded="false" />
+                <element signature="e#64176#64177#0" expanded="false" />
+                <element signature="e#64242#64243#0" expanded="false" />
+                <element signature="e#64415#64416#0" expanded="false" />
+                <element signature="e#64451#64452#0" expanded="false" />
+                <element signature="e#65307#65308#0" expanded="false" />
+                <element signature="e#65373#65374#0" expanded="false" />
+                <element signature="e#69981#69982#0" expanded="false" />
+                <element signature="e#70017#70018#0" expanded="false" />
+                <element signature="e#70070#70071#0" expanded="false" />
+                <element signature="e#70106#70107#0" expanded="false" />
+                <element signature="e#74286#74287#0" expanded="false" />
+                <element signature="e#74313#74314#0" expanded="false" />
+                <element signature="e#74591#74592#0" expanded="false" />
+                <element signature="e#74653#74654#0" expanded="false" />
+                <element signature="e#74811#74812#0" expanded="false" />
+                <element signature="e#74843#74844#0" expanded="false" />
+                <element signature="e#75100#75101#0" expanded="false" />
+                <element signature="e#75162#75163#0" expanded="false" />
+                <element signature="e#75327#75328#0" expanded="false" />
+                <element signature="e#75359#75360#0" expanded="false" />
+                <element signature="e#75574#75575#0" expanded="false" />
+                <element signature="e#75636#75637#0" expanded="false" />
+                <element signature="e#76917#76918#0" expanded="false" />
+                <element signature="e#76979#76980#0" expanded="false" />
+                <element signature="e#77431#77432#0" expanded="false" />
+                <element signature="e#77493#77494#0" expanded="false" />
+                <element signature="e#77650#77651#0" expanded="false" />
+                <element signature="e#77680#77681#0" expanded="false" />
+                <element signature="e#84071#84072#0" expanded="false" />
+                <element signature="e#84122#84123#0" expanded="false" />
+                <element signature="e#84226#84227#0" expanded="false" />
+                <element signature="e#84264#84265#0" expanded="false" />
+                <element signature="e#84950#84951#0" expanded="false" />
+                <element signature="e#85009#85010#0" expanded="false" />
+                <element signature="e#88699#88700#0" expanded="false" />
+                <element signature="e#88765#88766#0" expanded="false" />
+                <element signature="e#88939#88940#0" expanded="false" />
+                <element signature="e#88975#88976#0" expanded="false" />
+                <element signature="e#89833#89834#0" expanded="false" />
+                <element signature="e#89899#89900#0" expanded="false" />
+                <element signature="e#90072#90073#0" expanded="false" />
+                <element signature="e#90108#90109#0" expanded="false" />
+                <element signature="e#90960#90961#0" expanded="false" />
+                <element signature="e#91026#91027#0" expanded="false" />
+                <element signature="e#93314#93315#0" expanded="false" />
+                <element signature="e#93380#93381#0" expanded="false" />
+                <element signature="e#94569#94570#0" expanded="false" />
+                <element signature="e#94635#94636#0" expanded="false" />
+                <element signature="e#94800#94801#0" expanded="false" />
+                <element signature="e#94834#94835#0" expanded="false" />
+                <element signature="e#97554#97555#0" expanded="false" />
+                <element signature="e#97590#97591#0" expanded="false" />
+                <element signature="e#97644#97645#0" expanded="false" />
+                <element signature="e#97680#97681#0" expanded="false" />
+                <element signature="e#99830#99831#0" expanded="false" />
+                <element signature="e#99857#99858#0" expanded="false" />
+                <element signature="e#104251#104252#0" expanded="false" />
+                <element signature="e#104302#104303#0" expanded="false" />
+                <element signature="e#104406#104407#0" expanded="false" />
+                <element signature="e#104444#104445#0" expanded="false" />
+                <element signature="e#104560#104561#0" expanded="false" />
+                <element signature="e#104619#104620#0" expanded="false" />
+                <element signature="e#105648#105649#0" expanded="false" />
+                <element signature="e#105677#105678#0" expanded="false" />
+                <element signature="e#107806#107807#0" expanded="false" />
+                <element signature="e#107842#107843#0" expanded="false" />
+                <element signature="e#107896#107897#0" expanded="false" />
+                <element signature="e#107932#107933#0" expanded="false" />
+                <element signature="e#110261#110262#0" expanded="false" />
+                <element signature="e#110288#110289#0" expanded="false" />
+                <element signature="e#110566#110567#0" expanded="false" />
+                <element signature="e#110628#110629#0" expanded="false" />
+                <element signature="e#110786#110787#0" expanded="false" />
+                <element signature="e#110818#110819#0" expanded="false" />
+                <element signature="e#110851#110852#0" expanded="false" />
+                <element signature="e#110880#110881#0" expanded="false" />
+                <element signature="e#115544#115545#0" expanded="false" />
+                <element signature="e#115595#115596#0" expanded="false" />
+                <element signature="e#115699#115700#0" expanded="false" />
+                <element signature="e#115737#115738#0" expanded="false" />
+                <element signature="e#115927#115928#0" expanded="false" />
+                <element signature="e#115986#115987#0" expanded="false" />
+                <element signature="e#118426#118427#0" expanded="false" />
+                <element signature="e#118492#118493#0" expanded="false" />
+                <element signature="e#118666#118667#0" expanded="false" />
+                <element signature="e#118702#118703#0" expanded="false" />
+                <element signature="e#120971#120972#0" expanded="false" />
+                <element signature="e#121007#121008#0" expanded="false" />
+                <element signature="e#121060#121061#0" expanded="false" />
+                <element signature="e#121096#121097#0" expanded="false" />
+                <element signature="e#123951#123952#0" expanded="false" />
+                <element signature="e#123978#123979#0" expanded="false" />
+                <element signature="e#124240#124241#0" expanded="false" />
+                <element signature="e#124302#124303#0" expanded="false" />
+                <element signature="e#124452#124453#0" expanded="false" />
+                <element signature="e#124480#124481#0" expanded="false" />
+                <element signature="e#124745#124746#0" expanded="false" />
+                <element signature="e#124807#124808#0" expanded="false" />
+                <element signature="e#130191#130192#0" expanded="false" />
+                <element signature="e#130242#130243#0" expanded="false" />
+                <element signature="e#130346#130347#0" expanded="false" />
+                <element signature="e#130384#130385#0" expanded="false" />
+                <element signature="e#130721#130722#0" expanded="false" />
+                <element signature="e#130780#130781#0" expanded="false" />
+                <element signature="e#133498#133499#0" expanded="false" />
+                <element signature="e#133564#133565#0" expanded="false" />
+                <element signature="e#133730#133731#0" expanded="false" />
+                <element signature="e#133762#133763#0" expanded="false" />
+                <element signature="e#134616#134617#0" expanded="false" />
+                <element signature="e#134682#134683#0" expanded="false" />
+                <element signature="e#137911#137912#0" expanded="false" />
+                <element signature="e#137947#137948#0" expanded="false" />
+                <element signature="e#138006#138007#0" expanded="false" />
+                <element signature="e#138042#138043#0" expanded="false" />
+                <element signature="e#141271#141272#0" expanded="false" />
+                <element signature="e#141298#141299#0" expanded="false" />
+                <element signature="e#141560#141561#0" expanded="false" />
+                <element signature="e#141622#141623#0" expanded="false" />
+                <element signature="e#141772#141773#0" expanded="false" />
+                <element signature="e#141800#141801#0" expanded="false" />
+                <element signature="e#142011#142012#0" expanded="false" />
+                <element signature="e#142073#142074#0" expanded="false" />
+                <element signature="e#143334#143335#0" expanded="false" />
+                <element signature="e#143396#143397#0" expanded="false" />
+                <element signature="e#143561#143562#0" expanded="false" />
+                <element signature="e#143593#143594#0" expanded="false" />
+                <element signature="e#143815#143816#0" expanded="false" />
+                <element signature="e#143877#143878#0" expanded="false" />
+                <element signature="e#144006#144007#0" expanded="false" />
+                <element signature="e#144038#144039#0" expanded="false" />
+                <element signature="e#149944#149945#0" expanded="false" />
+                <element signature="e#149995#149996#0" expanded="false" />
+                <element signature="e#150099#150100#0" expanded="false" />
+                <element signature="e#150137#150138#0" expanded="false" />
+                <element signature="e#150648#150649#0" expanded="false" />
+                <element signature="e#150707#150708#0" expanded="false" />
+                <element signature="e#154035#154036#0" expanded="false" />
+                <element signature="e#154101#154102#0" expanded="false" />
+                <element signature="e#154267#154268#0" expanded="false" />
+                <element signature="e#154299#154300#0" expanded="false" />
+                <element signature="e#155022#155023#0" expanded="false" />
+                <element signature="e#155088#155089#0" expanded="false" />
+                <element signature="e#157347#157348#0" expanded="false" />
+                <element signature="e#157413#157414#0" expanded="false" />
+                <element signature="e#157586#157587#0" expanded="false" />
+                <element signature="e#157622#157623#0" expanded="false" />
+                <element signature="e#158517#158518#0" expanded="false" />
+                <element signature="e#158583#158584#0" expanded="false" />
+                <element signature="e#158720#158721#0" expanded="false" />
+                <element signature="e#158756#158757#0" expanded="false" />
+                <element signature="e#161040#161041#0" expanded="false" />
+                <element signature="e#161076#161077#0" expanded="false" />
+                <element signature="e#161135#161136#0" expanded="false" />
+                <element signature="e#161171#161172#0" expanded="false" />
+                <element signature="e#163672#163673#0" expanded="false" />
+                <element signature="e#163699#163700#0" expanded="false" />
+                <element signature="e#163962#163963#0" expanded="false" />
+                <element signature="e#164024#164025#0" expanded="false" />
+                <element signature="e#164175#164176#0" expanded="false" />
+                <element signature="e#164203#164204#0" expanded="false" />
+                <element signature="e#164425#164426#0" expanded="false" />
+                <element signature="e#164487#164488#0" expanded="false" />
+                <element signature="e#164616#164617#0" expanded="false" />
+                <element signature="e#164648#164649#0" expanded="false" />
+                <element signature="e#169766#169767#0" expanded="false" />
+                <element signature="e#169817#169818#0" expanded="false" />
+                <element signature="e#169921#169922#0" expanded="false" />
+                <element signature="e#169959#169960#0" expanded="false" />
+                <element signature="e#170254#170255#0" expanded="false" />
+                <element signature="e#170313#170314#0" expanded="false" />
+                <element signature="e#173021#173022#0" expanded="false" />
+                <element signature="e#173087#173088#0" expanded="false" />
+                <element signature="e#173254#173255#0" expanded="false" />
+                <element signature="e#173286#173287#0" expanded="false" />
+                <element signature="e#174056#174057#0" expanded="false" />
+                <element signature="e#174122#174123#0" expanded="false" />
+                <element signature="e#174259#174260#0" expanded="false" />
+                <element signature="e#174295#174296#0" expanded="false" />
+                <element signature="e#176408#176409#0" expanded="false" />
+                <element signature="e#176444#176445#0" expanded="false" />
+                <element signature="e#176504#176505#0" expanded="false" />
+                <element signature="e#176540#176541#0" expanded="false" />
+                <element signature="e#178901#178902#0" expanded="false" />
+                <element signature="e#178928#178929#0" expanded="false" />
+                <element signature="e#179190#179191#0" expanded="false" />
+                <element signature="e#179252#179253#0" expanded="false" />
+                <element signature="e#179402#179403#0" expanded="false" />
+                <element signature="e#179430#179431#0" expanded="false" />
+                <element signature="e#179463#179464#0" expanded="false" />
+                <element signature="e#179488#179489#0" expanded="false" />
+                <element signature="e#184284#184285#0" expanded="false" />
+                <element signature="e#184335#184336#0" expanded="false" />
+                <element signature="e#184439#184440#0" expanded="false" />
+                <element signature="e#184477#184478#0" expanded="false" />
+                <element signature="e#184663#184664#0" expanded="false" />
+                <element signature="e#184722#184723#0" expanded="false" />
+                <element signature="e#187192#187193#0" expanded="false" />
+                <element signature="e#187258#187259#0" expanded="false" />
+                <element signature="e#187424#187425#0" expanded="false" />
+                <element signature="e#187456#187457#0" expanded="false" />
+                <element signature="e#189704#189705#0" expanded="false" />
+                <element signature="e#189740#189741#0" expanded="false" />
+                <element signature="e#189800#189801#0" expanded="false" />
+                <element signature="e#189836#189837#0" expanded="false" />
+                <element signature="e#192343#192344#0" expanded="false" />
+                <element signature="e#192370#192371#0" expanded="false" />
+                <element signature="e#192633#192634#0" expanded="false" />
+                <element signature="e#192695#192696#0" expanded="false" />
+                <element signature="e#192846#192847#0" expanded="false" />
+                <element signature="e#192874#192875#0" expanded="false" />
+                <element signature="e#193068#193069#0" expanded="false" />
+                <element signature="e#193130#193131#0" expanded="false" />
+                <element signature="e#193232#193233#0" expanded="false" />
+                <element signature="e#193264#193265#0" expanded="false" />
+                <element signature="e#198458#198459#0" expanded="false" />
+                <element signature="e#198509#198510#0" expanded="false" />
+                <element signature="e#198613#198614#0" expanded="false" />
+                <element signature="e#198651#198652#0" expanded="false" />
+                <element signature="e#198911#198912#0" expanded="false" />
+                <element signature="e#198970#198971#0" expanded="false" />
+                <element signature="e#201766#201767#0" expanded="false" />
+                <element signature="e#201832#201833#0" expanded="false" />
+                <element signature="e#201999#202000#0" expanded="false" />
+                <element signature="e#202031#202032#0" expanded="false" />
+                <element signature="e#202736#202737#0" expanded="false" />
+                <element signature="e#202802#202803#0" expanded="false" />
+                <element signature="e#202912#202913#0" expanded="false" />
+                <element signature="e#202948#202949#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMLoginManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMLoginManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="214" column="56" selection-start-line="214" selection-start-column="56" selection-end-line="214" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#912#913#0" expanded="false" />
+                <element signature="e#939#940#0" expanded="false" />
+                <element signature="e#969#970#0" expanded="false" />
+                <element signature="e#1026#1027#0" expanded="false" />
+                <element signature="e#7196#7197#0" expanded="false" />
+                <element signature="e#7269#7270#0" expanded="false" />
+                <element signature="e#7328#7329#0" expanded="false" />
+                <element signature="e#7401#7402#0" expanded="false" />
+                <element signature="e#11963#11964#0" expanded="false" />
+                <element signature="e#12035#12036#0" expanded="false" />
+                <element signature="e#12093#12094#0" expanded="false" />
+                <element signature="e#12164#12165#0" expanded="false" />
+                <element signature="e#12224#12225#0" expanded="false" />
+                <element signature="e#12295#12296#0" expanded="false" />
+                <element signature="e#12414#12415#0" expanded="false" />
+                <element signature="e#12444#12445#0" expanded="false" />
+                <element signature="e#12625#12626#0" expanded="false" />
+                <element signature="e#12659#12660#0" expanded="false" />
+                <element signature="e#12714#12715#0" expanded="false" />
+                <element signature="e#12760#12761#0" expanded="false" />
+                <element signature="e#12800#12801#0" expanded="false" />
+                <element signature="e#12832#12833#0" expanded="false" />
+                <element signature="e#12886#12887#0" expanded="false" />
+                <element signature="e#12928#12929#0" expanded="false" />
+                <element signature="e#12970#12971#0" expanded="false" />
+                <element signature="e#13004#13005#0" expanded="false" />
+                <element signature="e#13038#13039#0" expanded="false" />
+                <element signature="e#13070#13071#0" expanded="false" />
+                <element signature="e#13119#13120#0" expanded="false" />
+                <element signature="e#13161#13162#0" expanded="false" />
+                <element signature="e#13196#13197#0" expanded="false" />
+                <element signature="e#13229#13230#0" expanded="false" />
+                <element signature="e#13280#13281#0" expanded="false" />
+                <element signature="e#13324#13325#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMSocketManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMSocketManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="107" column="53" selection-start-line="107" selection-start-column="53" selection-end-line="107" selection-end-column="53" />
+              <folding>
+                <element signature="e#1425#1426#0" expanded="false" />
+                <element signature="e#1452#1453#0" expanded="false" />
+                <element signature="e#1484#1485#0" expanded="false" />
+                <element signature="e#1542#1543#0" expanded="false" />
+                <element signature="e#1987#1988#0" expanded="false" />
+                <element signature="e#2034#2035#0" expanded="false" />
+                <element signature="e#9426#9427#0" expanded="false" />
+                <element signature="e#9493#9494#0" expanded="false" />
+                <element signature="e#12066#12067#0" expanded="false" />
+                <element signature="e#12101#12102#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMUIHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/utils/IMUIHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="77" column="58" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/ui/activity/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1580247">
+              <caret line="390" column="41" selection-start-line="390" selection-start-column="41" selection-end-line="390" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/event/LoginEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Security.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/src/libsecurity/lib/android/src/com/mogujie/tt/Security.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="36" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tt_activity_message.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/tt_activity_message.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.7540984">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/utils/ImageLoaderUtil.java" />
+        <option value="$PROJECT_DIR$/android/mgimlibs/src/main/java/com/polites/android/VectorF.java" />
+        <option value="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMSocketManager.java" />
+        <option value="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMLoginManager.java" />
+        <option value="$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/utils/IMUIHelper.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-10" />
+    <option name="width" value="1936" />
+    <option name="height" value="998" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Accessibility</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization &gt; Bidirectional Text</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Security</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Typography</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>C/C++</id>
+          </State>
+          <State>
+            <id>Class metricsJava</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Cloning issuesJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Compiler issuesJava</id>
+          </State>
+          <State>
+            <id>Concurrency annotation issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Data flow issuesJava</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Dependency issuesJava</id>
+          </State>
+          <State>
+            <id>Encapsulation issuesJava</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Finalization issuesJava</id>
+          </State>
+          <State>
+            <id>GPath inspectionsGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralC/C++</id>
+          </State>
+          <State>
+            <id>GeneralJava</id>
+          </State>
+          <State>
+            <id>Google Cloud Endpoints</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Initialization issuesJava</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java language level issuesJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaBeans issuesJava</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Language Injection</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Logging issuesJava</id>
+          </State>
+          <State>
+            <id>Memory issuesJava</id>
+          </State>
+          <State>
+            <id>Method metricsJava</id>
+          </State>
+          <State>
+            <id>Modularization issuesJava</id>
+          </State>
+          <State>
+            <id>Naming ConventionsGroovy</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Packaging issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Properties FilesJava</id>
+          </State>
+          <State>
+            <id>Resource management issuesJava</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+          <State>
+            <id>Visibility issuesJava</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>toString() issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeamTalk" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeamTalk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.splitter.proportion" value="0.24681684" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RunManager" selected="JUnit.All in main2">
+    <configuration default="false" name="All in main2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="main2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidNativeRunConfigurationType" factoryName="Android Native">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Hybrid" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Hybrid>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
+      <Native>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Native>
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Hybrid>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
+      <Native>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Native>
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <Hybrid>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Hybrid>
+      <Native>
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+      </Native>
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.All in main2" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in main2" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac425eec-46ee-4637-a436-dc41f6aa80b2" name="Default" comment="" />
+      <created>1460365110238</created>
+      <option name="number" value="Default" />
+      <updated>1460365110238</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-10" y="0" width="1936" height="998" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.49573562" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.513089" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.513089" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.486911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32896304" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32777116" sideWeight="0.48507464" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/mogujie_notification.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/tt_fragment_chat.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/tt_fragment_internal.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/app/UpdateDetection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/mgimlibs/src/main/java/com/polites/android/VectorF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.9214027">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/gen/com/mogujie/tt/BuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/mogujie_notification.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/tt_fragment_chat.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/activity_preview_message_images.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/tt_fragment_internal.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/mgimlibs/src/main/java/com/mogujie/tools/MGAutoUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/mgimlibs/src/main/java/com/polites/android/MathUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/mgimlibs/src/main/java/com/handmark/pulltorefresh/library/extras/PullToRefreshWebView2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/android/app/libs/universal-image-loader-1.9.3.jar!/com/nostra13/universalimageloader/core/ImageLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4352031">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-23/android/util/FloatMath.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.040366974">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/utils/ImageLoaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="35" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/service/IMService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/app/IMApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.866667">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/main2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/DB/sp/SystemConfigSp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.677419">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/android/app/libs/android-async-http-1.4.6.jar!/com/loopj/android/http/AsyncHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5">
+          <caret line="484" column="65" selection-start-line="484" selection-start-column="41" selection-end-line="484" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/android/app/libs/android-async-http-1.4.6.jar!/com/loopj/android/http/ResponseHandlerInterface.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16541353">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/ui/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="35" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/android/app/libs/android-async-http-1.4.6.jar!/com/loopj/android/http/TextHttpResponseHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/android/app/libs/android-async-http-1.4.6.jar!/com/loopj/android/http/BaseJsonHttpResponseHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/mgimlibs/src/main/java/com/polites/android/VectorF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/app/UpdateDetection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/daogenerator/src/main/main1.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/android/app/libs/netty-3.6.6.Final.jar!/org/jboss/netty/buffer/ChannelBuffer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.161125">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/network/SocketThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34814814">
+          <caret line="45" column="56" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.071429">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/mgimlibs/src/main/java/com/handmark/pulltorefresh/library/PullToRefreshWebView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/event/SocketEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/network/MsgServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.533334">
+          <caret line="22" column="55" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMPacketDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/protobuf/base/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="21" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/protobuf/base/DefaultHeader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/Security.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/utils/IMUIHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="77" column="58" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/mgimlibs/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3982103">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/src/libsecurity/lib/android/src/com/mogujie/tt/Security.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/event/LoginEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMSocketManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="53" selection-start-line="107" selection-start-column="53" selection-end-line="107" selection-end-column="53" />
+          <folding>
+            <element signature="e#1425#1426#0" expanded="false" />
+            <element signature="e#1452#1453#0" expanded="false" />
+            <element signature="e#1484#1485#0" expanded="false" />
+            <element signature="e#1542#1543#0" expanded="false" />
+            <element signature="e#1987#1988#0" expanded="false" />
+            <element signature="e#2034#2035#0" expanded="false" />
+            <element signature="e#9426#9427#0" expanded="false" />
+            <element signature="e#9493#9494#0" expanded="false" />
+            <element signature="e#12066#12067#0" expanded="false" />
+            <element signature="e#12101#12102#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/imservice/manager/IMLoginManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="214" column="56" selection-start-line="214" selection-start-column="56" selection-end-line="214" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#912#913#0" expanded="false" />
+            <element signature="e#939#940#0" expanded="false" />
+            <element signature="e#969#970#0" expanded="false" />
+            <element signature="e#1026#1027#0" expanded="false" />
+            <element signature="e#7196#7197#0" expanded="false" />
+            <element signature="e#7269#7270#0" expanded="false" />
+            <element signature="e#7328#7329#0" expanded="false" />
+            <element signature="e#7401#7402#0" expanded="false" />
+            <element signature="e#11963#11964#0" expanded="false" />
+            <element signature="e#12035#12036#0" expanded="false" />
+            <element signature="e#12093#12094#0" expanded="false" />
+            <element signature="e#12164#12165#0" expanded="false" />
+            <element signature="e#12224#12225#0" expanded="false" />
+            <element signature="e#12295#12296#0" expanded="false" />
+            <element signature="e#12414#12415#0" expanded="false" />
+            <element signature="e#12444#12445#0" expanded="false" />
+            <element signature="e#12625#12626#0" expanded="false" />
+            <element signature="e#12659#12660#0" expanded="false" />
+            <element signature="e#12714#12715#0" expanded="false" />
+            <element signature="e#12760#12761#0" expanded="false" />
+            <element signature="e#12800#12801#0" expanded="false" />
+            <element signature="e#12832#12833#0" expanded="false" />
+            <element signature="e#12886#12887#0" expanded="false" />
+            <element signature="e#12928#12929#0" expanded="false" />
+            <element signature="e#12970#12971#0" expanded="false" />
+            <element signature="e#13004#13005#0" expanded="false" />
+            <element signature="e#13038#13039#0" expanded="false" />
+            <element signature="e#13070#13071#0" expanded="false" />
+            <element signature="e#13119#13120#0" expanded="false" />
+            <element signature="e#13161#13162#0" expanded="false" />
+            <element signature="e#13196#13197#0" expanded="false" />
+            <element signature="e#13229#13230#0" expanded="false" />
+            <element signature="e#13280#13281#0" expanded="false" />
+            <element signature="e#13324#13325#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/res/layout/tt_activity_message.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7540984">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/protobuf/IMBaseDefine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027160494">
+          <caret line="256" column="28" selection-start-line="256" selection-start-column="28" selection-end-line="256" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/daogenerator/src/main/java/com/mogujie/GreenDaoGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.027160494">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/protobuf/IMLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1653" column="68" selection-start-line="1653" selection-start-column="56" selection-end-line="1653" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#203740#0" expanded="false" />
+            <element signature="e#1210#1211#0" expanded="false" />
+            <element signature="e#1246#1247#0" expanded="false" />
+            <element signature="e#1301#1302#0" expanded="false" />
+            <element signature="e#1337#1338#0" expanded="false" />
+            <element signature="e#3493#3494#0" expanded="false" />
+            <element signature="e#3520#3521#0" expanded="false" />
+            <element signature="e#7930#7931#0" expanded="false" />
+            <element signature="e#7981#7982#0" expanded="false" />
+            <element signature="e#8085#8086#0" expanded="false" />
+            <element signature="e#8123#8124#0" expanded="false" />
+            <element signature="e#8239#8240#0" expanded="false" />
+            <element signature="e#8298#8299#0" expanded="false" />
+            <element signature="e#9336#9337#0" expanded="false" />
+            <element signature="e#9365#9366#0" expanded="false" />
+            <element signature="e#12409#12410#0" expanded="false" />
+            <element signature="e#12445#12446#0" expanded="false" />
+            <element signature="e#12500#12501#0" expanded="false" />
+            <element signature="e#12536#12537#0" expanded="false" />
+            <element signature="e#15786#15787#0" expanded="false" />
+            <element signature="e#15813#15814#0" expanded="false" />
+            <element signature="e#16154#16155#0" expanded="false" />
+            <element signature="e#16216#16217#0" expanded="false" />
+            <element signature="e#16437#16438#0" expanded="false" />
+            <element signature="e#16469#16470#0" expanded="false" />
+            <element signature="e#16664#16665#0" expanded="false" />
+            <element signature="e#16726#16727#0" expanded="false" />
+            <element signature="e#17897#17898#0" expanded="false" />
+            <element signature="e#17959#17960#0" expanded="false" />
+            <element signature="e#19107#19108#0" expanded="false" />
+            <element signature="e#19169#19170#0" expanded="false" />
+            <element signature="e#19258#19259#0" expanded="false" />
+            <element signature="e#19284#19285#0" expanded="false" />
+            <element signature="e#24991#24992#0" expanded="false" />
+            <element signature="e#25042#25043#0" expanded="false" />
+            <element signature="e#25146#25147#0" expanded="false" />
+            <element signature="e#25184#25185#0" expanded="false" />
+            <element signature="e#25652#25653#0" expanded="false" />
+            <element signature="e#25711#25712#0" expanded="false" />
+            <element signature="e#29066#29067#0" expanded="false" />
+            <element signature="e#29132#29133#0" expanded="false" />
+            <element signature="e#29369#29370#0" expanded="false" />
+            <element signature="e#29405#29406#0" expanded="false" />
+            <element signature="e#30370#30371#0" expanded="false" />
+            <element signature="e#30436#30437#0" expanded="false" />
+            <element signature="e#32502#32503#0" expanded="false" />
+            <element signature="e#32568#32569#0" expanded="false" />
+            <element signature="e#34622#34623#0" expanded="false" />
+            <element signature="e#34688#34689#0" expanded="false" />
+            <element signature="e#34785#34786#0" expanded="false" />
+            <element signature="e#34815#34816#0" expanded="false" />
+            <element signature="e#38088#38089#0" expanded="false" />
+            <element signature="e#38124#38125#0" expanded="false" />
+            <element signature="e#38177#38178#0" expanded="false" />
+            <element signature="e#38213#38214#0" expanded="false" />
+            <element signature="e#42049#42050#0" expanded="false" />
+            <element signature="e#42076#42077#0" expanded="false" />
+            <element signature="e#42359#42360#0" expanded="false" />
+            <element signature="e#42421#42422#0" expanded="false" />
+            <element signature="e#43710#43711#0" expanded="false" />
+            <element signature="e#43772#43773#0" expanded="false" />
+            <element signature="e#45019#45020#0" expanded="false" />
+            <element signature="e#45081#45082#0" expanded="false" />
+            <element signature="e#45545#45546#0" expanded="false" />
+            <element signature="e#45607#45608#0" expanded="false" />
+            <element signature="e#45772#45773#0" expanded="false" />
+            <element signature="e#45804#45805#0" expanded="false" />
+            <element signature="e#46023#46024#0" expanded="false" />
+            <element signature="e#46085#46086#0" expanded="false" />
+            <element signature="e#53497#53498#0" expanded="false" />
+            <element signature="e#53548#53549#0" expanded="false" />
+            <element signature="e#53652#53653#0" expanded="false" />
+            <element signature="e#53690#53691#0" expanded="false" />
+            <element signature="e#54313#54314#0" expanded="false" />
+            <element signature="e#54372#54373#0" expanded="false" />
+            <element signature="e#58164#58165#0" expanded="false" />
+            <element signature="e#58230#58231#0" expanded="false" />
+            <element signature="e#60633#60634#0" expanded="false" />
+            <element signature="e#60699#60700#0" expanded="false" />
+            <element signature="e#62910#62911#0" expanded="false" />
+            <element signature="e#62976#62977#0" expanded="false" />
+            <element signature="e#64176#64177#0" expanded="false" />
+            <element signature="e#64242#64243#0" expanded="false" />
+            <element signature="e#64415#64416#0" expanded="false" />
+            <element signature="e#64451#64452#0" expanded="false" />
+            <element signature="e#65307#65308#0" expanded="false" />
+            <element signature="e#65373#65374#0" expanded="false" />
+            <element signature="e#69981#69982#0" expanded="false" />
+            <element signature="e#70017#70018#0" expanded="false" />
+            <element signature="e#70070#70071#0" expanded="false" />
+            <element signature="e#70106#70107#0" expanded="false" />
+            <element signature="e#74286#74287#0" expanded="false" />
+            <element signature="e#74313#74314#0" expanded="false" />
+            <element signature="e#74591#74592#0" expanded="false" />
+            <element signature="e#74653#74654#0" expanded="false" />
+            <element signature="e#74811#74812#0" expanded="false" />
+            <element signature="e#74843#74844#0" expanded="false" />
+            <element signature="e#75100#75101#0" expanded="false" />
+            <element signature="e#75162#75163#0" expanded="false" />
+            <element signature="e#75327#75328#0" expanded="false" />
+            <element signature="e#75359#75360#0" expanded="false" />
+            <element signature="e#75574#75575#0" expanded="false" />
+            <element signature="e#75636#75637#0" expanded="false" />
+            <element signature="e#76917#76918#0" expanded="false" />
+            <element signature="e#76979#76980#0" expanded="false" />
+            <element signature="e#77431#77432#0" expanded="false" />
+            <element signature="e#77493#77494#0" expanded="false" />
+            <element signature="e#77650#77651#0" expanded="false" />
+            <element signature="e#77680#77681#0" expanded="false" />
+            <element signature="e#84071#84072#0" expanded="false" />
+            <element signature="e#84122#84123#0" expanded="false" />
+            <element signature="e#84226#84227#0" expanded="false" />
+            <element signature="e#84264#84265#0" expanded="false" />
+            <element signature="e#84950#84951#0" expanded="false" />
+            <element signature="e#85009#85010#0" expanded="false" />
+            <element signature="e#88699#88700#0" expanded="false" />
+            <element signature="e#88765#88766#0" expanded="false" />
+            <element signature="e#88939#88940#0" expanded="false" />
+            <element signature="e#88975#88976#0" expanded="false" />
+            <element signature="e#89833#89834#0" expanded="false" />
+            <element signature="e#89899#89900#0" expanded="false" />
+            <element signature="e#90072#90073#0" expanded="false" />
+            <element signature="e#90108#90109#0" expanded="false" />
+            <element signature="e#90960#90961#0" expanded="false" />
+            <element signature="e#91026#91027#0" expanded="false" />
+            <element signature="e#93314#93315#0" expanded="false" />
+            <element signature="e#93380#93381#0" expanded="false" />
+            <element signature="e#94569#94570#0" expanded="false" />
+            <element signature="e#94635#94636#0" expanded="false" />
+            <element signature="e#94800#94801#0" expanded="false" />
+            <element signature="e#94834#94835#0" expanded="false" />
+            <element signature="e#97554#97555#0" expanded="false" />
+            <element signature="e#97590#97591#0" expanded="false" />
+            <element signature="e#97644#97645#0" expanded="false" />
+            <element signature="e#97680#97681#0" expanded="false" />
+            <element signature="e#99830#99831#0" expanded="false" />
+            <element signature="e#99857#99858#0" expanded="false" />
+            <element signature="e#104251#104252#0" expanded="false" />
+            <element signature="e#104302#104303#0" expanded="false" />
+            <element signature="e#104406#104407#0" expanded="false" />
+            <element signature="e#104444#104445#0" expanded="false" />
+            <element signature="e#104560#104561#0" expanded="false" />
+            <element signature="e#104619#104620#0" expanded="false" />
+            <element signature="e#105648#105649#0" expanded="false" />
+            <element signature="e#105677#105678#0" expanded="false" />
+            <element signature="e#107806#107807#0" expanded="false" />
+            <element signature="e#107842#107843#0" expanded="false" />
+            <element signature="e#107896#107897#0" expanded="false" />
+            <element signature="e#107932#107933#0" expanded="false" />
+            <element signature="e#110261#110262#0" expanded="false" />
+            <element signature="e#110288#110289#0" expanded="false" />
+            <element signature="e#110566#110567#0" expanded="false" />
+            <element signature="e#110628#110629#0" expanded="false" />
+            <element signature="e#110786#110787#0" expanded="false" />
+            <element signature="e#110818#110819#0" expanded="false" />
+            <element signature="e#110851#110852#0" expanded="false" />
+            <element signature="e#110880#110881#0" expanded="false" />
+            <element signature="e#115544#115545#0" expanded="false" />
+            <element signature="e#115595#115596#0" expanded="false" />
+            <element signature="e#115699#115700#0" expanded="false" />
+            <element signature="e#115737#115738#0" expanded="false" />
+            <element signature="e#115927#115928#0" expanded="false" />
+            <element signature="e#115986#115987#0" expanded="false" />
+            <element signature="e#118426#118427#0" expanded="false" />
+            <element signature="e#118492#118493#0" expanded="false" />
+            <element signature="e#118666#118667#0" expanded="false" />
+            <element signature="e#118702#118703#0" expanded="false" />
+            <element signature="e#120971#120972#0" expanded="false" />
+            <element signature="e#121007#121008#0" expanded="false" />
+            <element signature="e#121060#121061#0" expanded="false" />
+            <element signature="e#121096#121097#0" expanded="false" />
+            <element signature="e#123951#123952#0" expanded="false" />
+            <element signature="e#123978#123979#0" expanded="false" />
+            <element signature="e#124240#124241#0" expanded="false" />
+            <element signature="e#124302#124303#0" expanded="false" />
+            <element signature="e#124452#124453#0" expanded="false" />
+            <element signature="e#124480#124481#0" expanded="false" />
+            <element signature="e#124745#124746#0" expanded="false" />
+            <element signature="e#124807#124808#0" expanded="false" />
+            <element signature="e#130191#130192#0" expanded="false" />
+            <element signature="e#130242#130243#0" expanded="false" />
+            <element signature="e#130346#130347#0" expanded="false" />
+            <element signature="e#130384#130385#0" expanded="false" />
+            <element signature="e#130721#130722#0" expanded="false" />
+            <element signature="e#130780#130781#0" expanded="false" />
+            <element signature="e#133498#133499#0" expanded="false" />
+            <element signature="e#133564#133565#0" expanded="false" />
+            <element signature="e#133730#133731#0" expanded="false" />
+            <element signature="e#133762#133763#0" expanded="false" />
+            <element signature="e#134616#134617#0" expanded="false" />
+            <element signature="e#134682#134683#0" expanded="false" />
+            <element signature="e#137911#137912#0" expanded="false" />
+            <element signature="e#137947#137948#0" expanded="false" />
+            <element signature="e#138006#138007#0" expanded="false" />
+            <element signature="e#138042#138043#0" expanded="false" />
+            <element signature="e#141271#141272#0" expanded="false" />
+            <element signature="e#141298#141299#0" expanded="false" />
+            <element signature="e#141560#141561#0" expanded="false" />
+            <element signature="e#141622#141623#0" expanded="false" />
+            <element signature="e#141772#141773#0" expanded="false" />
+            <element signature="e#141800#141801#0" expanded="false" />
+            <element signature="e#142011#142012#0" expanded="false" />
+            <element signature="e#142073#142074#0" expanded="false" />
+            <element signature="e#143334#143335#0" expanded="false" />
+            <element signature="e#143396#143397#0" expanded="false" />
+            <element signature="e#143561#143562#0" expanded="false" />
+            <element signature="e#143593#143594#0" expanded="false" />
+            <element signature="e#143815#143816#0" expanded="false" />
+            <element signature="e#143877#143878#0" expanded="false" />
+            <element signature="e#144006#144007#0" expanded="false" />
+            <element signature="e#144038#144039#0" expanded="false" />
+            <element signature="e#149944#149945#0" expanded="false" />
+            <element signature="e#149995#149996#0" expanded="false" />
+            <element signature="e#150099#150100#0" expanded="false" />
+            <element signature="e#150137#150138#0" expanded="false" />
+            <element signature="e#150648#150649#0" expanded="false" />
+            <element signature="e#150707#150708#0" expanded="false" />
+            <element signature="e#154035#154036#0" expanded="false" />
+            <element signature="e#154101#154102#0" expanded="false" />
+            <element signature="e#154267#154268#0" expanded="false" />
+            <element signature="e#154299#154300#0" expanded="false" />
+            <element signature="e#155022#155023#0" expanded="false" />
+            <element signature="e#155088#155089#0" expanded="false" />
+            <element signature="e#157347#157348#0" expanded="false" />
+            <element signature="e#157413#157414#0" expanded="false" />
+            <element signature="e#157586#157587#0" expanded="false" />
+            <element signature="e#157622#157623#0" expanded="false" />
+            <element signature="e#158517#158518#0" expanded="false" />
+            <element signature="e#158583#158584#0" expanded="false" />
+            <element signature="e#158720#158721#0" expanded="false" />
+            <element signature="e#158756#158757#0" expanded="false" />
+            <element signature="e#161040#161041#0" expanded="false" />
+            <element signature="e#161076#161077#0" expanded="false" />
+            <element signature="e#161135#161136#0" expanded="false" />
+            <element signature="e#161171#161172#0" expanded="false" />
+            <element signature="e#163672#163673#0" expanded="false" />
+            <element signature="e#163699#163700#0" expanded="false" />
+            <element signature="e#163962#163963#0" expanded="false" />
+            <element signature="e#164024#164025#0" expanded="false" />
+            <element signature="e#164175#164176#0" expanded="false" />
+            <element signature="e#164203#164204#0" expanded="false" />
+            <element signature="e#164425#164426#0" expanded="false" />
+            <element signature="e#164487#164488#0" expanded="false" />
+            <element signature="e#164616#164617#0" expanded="false" />
+            <element signature="e#164648#164649#0" expanded="false" />
+            <element signature="e#169766#169767#0" expanded="false" />
+            <element signature="e#169817#169818#0" expanded="false" />
+            <element signature="e#169921#169922#0" expanded="false" />
+            <element signature="e#169959#169960#0" expanded="false" />
+            <element signature="e#170254#170255#0" expanded="false" />
+            <element signature="e#170313#170314#0" expanded="false" />
+            <element signature="e#173021#173022#0" expanded="false" />
+            <element signature="e#173087#173088#0" expanded="false" />
+            <element signature="e#173254#173255#0" expanded="false" />
+            <element signature="e#173286#173287#0" expanded="false" />
+            <element signature="e#174056#174057#0" expanded="false" />
+            <element signature="e#174122#174123#0" expanded="false" />
+            <element signature="e#174259#174260#0" expanded="false" />
+            <element signature="e#174295#174296#0" expanded="false" />
+            <element signature="e#176408#176409#0" expanded="false" />
+            <element signature="e#176444#176445#0" expanded="false" />
+            <element signature="e#176504#176505#0" expanded="false" />
+            <element signature="e#176540#176541#0" expanded="false" />
+            <element signature="e#178901#178902#0" expanded="false" />
+            <element signature="e#178928#178929#0" expanded="false" />
+            <element signature="e#179190#179191#0" expanded="false" />
+            <element signature="e#179252#179253#0" expanded="false" />
+            <element signature="e#179402#179403#0" expanded="false" />
+            <element signature="e#179430#179431#0" expanded="false" />
+            <element signature="e#179463#179464#0" expanded="false" />
+            <element signature="e#179488#179489#0" expanded="false" />
+            <element signature="e#184284#184285#0" expanded="false" />
+            <element signature="e#184335#184336#0" expanded="false" />
+            <element signature="e#184439#184440#0" expanded="false" />
+            <element signature="e#184477#184478#0" expanded="false" />
+            <element signature="e#184663#184664#0" expanded="false" />
+            <element signature="e#184722#184723#0" expanded="false" />
+            <element signature="e#187192#187193#0" expanded="false" />
+            <element signature="e#187258#187259#0" expanded="false" />
+            <element signature="e#187424#187425#0" expanded="false" />
+            <element signature="e#187456#187457#0" expanded="false" />
+            <element signature="e#189704#189705#0" expanded="false" />
+            <element signature="e#189740#189741#0" expanded="false" />
+            <element signature="e#189800#189801#0" expanded="false" />
+            <element signature="e#189836#189837#0" expanded="false" />
+            <element signature="e#192343#192344#0" expanded="false" />
+            <element signature="e#192370#192371#0" expanded="false" />
+            <element signature="e#192633#192634#0" expanded="false" />
+            <element signature="e#192695#192696#0" expanded="false" />
+            <element signature="e#192846#192847#0" expanded="false" />
+            <element signature="e#192874#192875#0" expanded="false" />
+            <element signature="e#193068#193069#0" expanded="false" />
+            <element signature="e#193130#193131#0" expanded="false" />
+            <element signature="e#193232#193233#0" expanded="false" />
+            <element signature="e#193264#193265#0" expanded="false" />
+            <element signature="e#198458#198459#0" expanded="false" />
+            <element signature="e#198509#198510#0" expanded="false" />
+            <element signature="e#198613#198614#0" expanded="false" />
+            <element signature="e#198651#198652#0" expanded="false" />
+            <element signature="e#198911#198912#0" expanded="false" />
+            <element signature="e#198970#198971#0" expanded="false" />
+            <element signature="e#201766#201767#0" expanded="false" />
+            <element signature="e#201832#201833#0" expanded="false" />
+            <element signature="e#201999#202000#0" expanded="false" />
+            <element signature="e#202031#202032#0" expanded="false" />
+            <element signature="e#202736#202737#0" expanded="false" />
+            <element signature="e#202802#202803#0" expanded="false" />
+            <element signature="e#202912#202913#0" expanded="false" />
+            <element signature="e#202948#202949#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android/app/src/main/java/com/mogujie/tt/ui/activity/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1580247">
+          <caret line="390" column="41" selection-start-line="390" selection-start-column="41" selection-end-line="390" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android API 19 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>main2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>3rdParty</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

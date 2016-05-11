@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hiredis-master">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/server/src/hiredis/hiredis-master.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

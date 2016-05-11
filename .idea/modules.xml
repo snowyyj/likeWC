@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/server/src/libsecurity/lib/android/android.iml" filepath="$PROJECT_DIR$/server/src/libsecurity/lib/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/mgimlibs/src/main/main.iml" filepath="$PROJECT_DIR$/android/mgimlibs/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/daogenerator/src/main/main1.iml" filepath="$PROJECT_DIR$/android/daogenerator/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/app/src/main/main2.iml" filepath="$PROJECT_DIR$/android/app/src/main/main2.iml" />
+    </modules>
+  </component>
+</project>
