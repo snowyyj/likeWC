@@ -16,14 +16,13 @@ import com.mogujie.tt.DB.entity.UserEntity;
 import com.mogujie.tt.R;
 import com.mogujie.tt.config.DBConstant;
 import com.mogujie.tt.config.IntentConstant;
-import com.mogujie.tt.config.SysConstant;
-import com.mogujie.tt.utils.IMUIHelper;
 import com.mogujie.tt.imservice.event.UserInfoEvent;
 import com.mogujie.tt.imservice.manager.IMLoginManager;
 import com.mogujie.tt.imservice.service.IMService;
-import com.mogujie.tt.ui.activity.DetailPortraitActivity;
 import com.mogujie.tt.imservice.support.IMServiceConnector;
+import com.mogujie.tt.ui.activity.DetailPortraitActivity;
 import com.mogujie.tt.ui.widget.IMBaseImageView;
+import com.mogujie.tt.utils.IMUIHelper;
 
 import java.util.ArrayList;
 

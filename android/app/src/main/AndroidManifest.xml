@@ -15,7 +15,8 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="18" />
 
     <supports-screens
@@ -28,21 +29,20 @@
     <application
         android:name=".app.IMApplication"
         android:icon="@drawable/tt_logo"
-        android:largeHeap="true"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.NoTitleBar" >
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.NoTitleBar">
         <activity
             android:name=".ui.activity.MessageActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.LoginActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -53,79 +53,67 @@
             android:name=".ui.activity.ContactFragmentActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/contact_name"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activity.MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:theme="@style/activityAnimLeftRight">
+            android:screenOrientation="portrait"></activity>
 
         <service
             android:name=".imservice.service.IMService"
-            android:exported="false" >
-        </service>
+            android:exported="false" />
         <service android:name=".imservice.service.LoadImageService" />
 
         <activity
             android:name=".ui.activity.PickPhotoActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.ImageGridActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.PreviewActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.PreviewTextActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.PreviewGifActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.UserInfoActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.GroupManagermentActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.GroupMemberSelectActivity"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="adjustNothing" >
-        </activity>
+            android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".ui.activity.SettingActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.SearchActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.WebViewFragmentActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
 
@@ -137,14 +125,14 @@
         <activity
             android:name=".ui.activity.DetailPortraitActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name=".ui.activity.PreviewMessageImagesActivity"
-            android:screenOrientation="portrait"
-            >
-        </activity>
-
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AddFriendActivity"
+            android:theme="@style/activityAnimLeftRight"></activity>
+        <activity android:name=".ui.activity.SearchFriendActivity"></activity>
     </application>
 
 </manifest>

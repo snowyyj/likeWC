@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.mogujie.tt"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 19
         versionCode 5
         versionName "2.0.0"
@@ -40,11 +40,10 @@ android {
     }
 }
 
-
 dependencies {
     compile project(':mgimlibs')
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:19.+'
+    compile 'com.android.support:appcompat-v7:19.1.0'
     compile 'com.google.protobuf:protobuf-java:2.6.1'
     compile 'de.greenrobot:eventbus:2.4.0'
     compile 'de.greenrobot:greendao:1.3.7'
@@ -52,4 +51,5 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.0.0'
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
     compile 'commons-io:commons-io:2.4'
+    compile 'com.android.support:support-v4:19.1.0'
 }

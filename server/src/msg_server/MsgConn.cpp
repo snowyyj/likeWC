@@ -378,6 +378,8 @@ void CMsgConn::HandlePdu(CImPdu* pPdu)
             break;
         case CID_FILE_DEL_OFFLINE_REQ:
             s_file_handler->HandleClientFileDelOfflineReq(this, pPdu);
+		case CID_GETUSER_INFO_REQ:
+				
             break;
         default:
             log("wrong msg, cmd id=%d, user id=%u. ", pPdu->GetCommandId(), GetUserId());
@@ -995,3 +997,15 @@ void CMsgConn::_HandleQueryPushShieldRequest(CImPdu* pPdu) {
         pDBConn->SendPdu(pPdu);
     }
 }
+
+void CMsgConn::_HandleClientGetUserInfo(CImPdu* pPdu) {
+	log("_HandleClientGetUserInfo");
+	IM::Friend::IMGetUserInfoReq msg;
+	CHECK_PB_PARSE_MSG(msg.ParseFromArray(pPdu->GetBodyData(), pPdu->GetBodyLength()));
+	log("nick name = %s", msg.nick_name().c_str());
+	
+	
+}
+
+
+

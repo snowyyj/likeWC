@@ -260,6 +260,16 @@ bool OtherCmdID_IsValid(int value) {
   }
 }
 
+bool FriendCmdID_IsValid(int value) {
+  switch(value) {
+    case 2049:
+    case 2050:
+      return true;
+    default:
+      return false;
+  }
+}
+
 bool ResultType_IsValid(int value) {
   switch(value) {
     case 0:
@@ -429,6 +439,18 @@ bool DepartmentStatusType_IsValid(int value) {
   switch(value) {
     case 0:
     case 1:
+      return true;
+    default:
+      return false;
+  }
+}
+
+bool FriendPermission_IsValid(int value) {
+  switch(value) {
+    case 1:
+    case 2:
+    case 4:
+    case 8:
       return true;
     default:
       return false;

@@ -69,6 +69,7 @@ public class ImageLoaderUtil {
         return IMImageLoadInstance;
     }
 
+
     public static DisplayImageOptions getAvatarOptions(int corner,int defaultRes){
         try {
             if (defaultRes <= 0) {

@@ -108,6 +108,11 @@
         <item name="android:windowNoTitle">true</item> <!-- 没有标题 -->
         <item name="android:windowIsFloating">true</item> <!-- 是否浮在activity之上 -->
     </style>
+    
+    <style name="activityAnimLeftRight" parent="android:Animation.Activity">
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
 
 
     <!--<style name="AppTheme" parent="android:Theme.NoTitleBar">-->

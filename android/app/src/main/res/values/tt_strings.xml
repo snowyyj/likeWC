@@ -34,6 +34,14 @@
     <string name="choose_contact">选择联系人</string>
     <string name="switch_login_server">切换登陆服务器</string>
     <string name="switch_login_server_title">输入登陆服务器地址</string>
-    
+
+    <!-- 主界面popup menu菜单 -->
+    <string name="chat_with_group">发起群聊</string>
+    <string name="add_friend">添加朋友</string>
+    <string name="open_dimension_code">扫一扫</string>
+    <string name="help_contact_me">帮助与反馈</string>
+
+    <!--添加朋友页面 -->
+    <string name="search_account">搜索</string>
 
 </resources>

@@ -137,6 +137,11 @@ enum OtherCmdID{
     CID_OTHER_FILE_SERVER_IP_RSP            = 0x0734;
 }
 
+enum FriendCmdID{
+	CID_GETUSER_INFO_REQ					= 0x0801;
+	CID_MakeFriend_REQ						= 0x0802;
+}
+
 enum ResultType{
 	REFUSE_REASON_NONE				= 0;
 	REFUSE_REASON_NO_MSG_SERVER		= 1;
@@ -352,3 +357,12 @@ message PushShieldStatus{
     required uint32 user_id = 1;
     required uint32 shield_status = 2;		//1: shield  0: not shield
 }
+
+
+enum FriendPermission{
+	Per_ShieldMsg    		= 1;		//屏蔽消息
+    Per_NotShowCircle		= 2;		//不让看朋友圈
+    Per_NotLookCircle     	= 4;		//不看他的朋友圈
+    Per_StarFriend		    = 8;		//标星朋友
+}
+

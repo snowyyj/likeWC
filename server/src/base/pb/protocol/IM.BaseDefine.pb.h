@@ -208,6 +208,15 @@ const OtherCmdID OtherCmdID_MIN = CID_OTHER_HEARTBEAT;
 const OtherCmdID OtherCmdID_MAX = CID_OTHER_FILE_SERVER_IP_RSP;
 const int OtherCmdID_ARRAYSIZE = OtherCmdID_MAX + 1;
 
+enum FriendCmdID {
+  CID_GETUSER_INFO_REQ = 2049,
+  CID_MakeFriend_REQ = 2050
+};
+bool FriendCmdID_IsValid(int value);
+const FriendCmdID FriendCmdID_MIN = CID_GETUSER_INFO_REQ;
+const FriendCmdID FriendCmdID_MAX = CID_MakeFriend_REQ;
+const int FriendCmdID_ARRAYSIZE = FriendCmdID_MAX + 1;
+
 enum ResultType {
   REFUSE_REASON_NONE = 0,
   REFUSE_REASON_NO_MSG_SERVER = 1,
@@ -367,6 +376,17 @@ bool DepartmentStatusType_IsValid(int value);
 const DepartmentStatusType DepartmentStatusType_MIN = DEPT_STATUS_OK;
 const DepartmentStatusType DepartmentStatusType_MAX = DEPT_STATUS_DELETE;
 const int DepartmentStatusType_ARRAYSIZE = DepartmentStatusType_MAX + 1;
+
+enum FriendPermission {
+  Per_ShieldMsg = 1,
+  Per_NotShowCircle = 2,
+  Per_NotLookCircle = 4,
+  Per_StarFriend = 8
+};
+bool FriendPermission_IsValid(int value);
+const FriendPermission FriendPermission_MIN = Per_ShieldMsg;
+const FriendPermission FriendPermission_MAX = Per_StarFriend;
+const int FriendPermission_ARRAYSIZE = FriendPermission_MAX + 1;
 
 // ===================================================================
 

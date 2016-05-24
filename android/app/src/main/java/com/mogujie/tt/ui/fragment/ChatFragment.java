@@ -1,32 +1,35 @@
 
 package com.mogujie.tt.ui.fragment;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.ContextThemeWrapper;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.mogujie.tt.config.DBConstant;
 import com.mogujie.tt.DB.entity.GroupEntity;
-import com.mogujie.tt.DB.entity.UserEntity;
 import com.mogujie.tt.R;
-import com.mogujie.tt.protobuf.helper.EntityChangeEngine;
-import com.mogujie.tt.ui.adapter.ChatAdapter;
-import com.mogujie.tt.utils.IMUIHelper;
+import com.mogujie.tt.config.DBConstant;
 import com.mogujie.tt.imservice.entity.RecentInfo;
 import com.mogujie.tt.imservice.event.GroupEvent;
 import com.mogujie.tt.imservice.event.LoginEvent;
@@ -39,9 +42,12 @@ import com.mogujie.tt.imservice.manager.IMLoginManager;
 import com.mogujie.tt.imservice.manager.IMReconnectManager;
 import com.mogujie.tt.imservice.manager.IMUnreadMsgManager;
 import com.mogujie.tt.imservice.service.IMService;
-import com.mogujie.tt.protobuf.IMBaseDefine;
-import com.mogujie.tt.ui.activity.MainActivity;
 import com.mogujie.tt.imservice.support.IMServiceConnector;
+import com.mogujie.tt.ui.activity.AddFriendActivity;
+import com.mogujie.tt.ui.activity.MainActivity;
+import com.mogujie.tt.ui.adapter.AddChatAdapter;
+import com.mogujie.tt.ui.adapter.ChatAdapter;
+import com.mogujie.tt.utils.IMUIHelper;
 import com.mogujie.tt.utils.NetworkUtil;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
@@ -138,7 +144,41 @@ public class ChatFragment extends MainFragment
     private void initTitleView() {
         // 设置标题
         setTopTitleBold(getActivity().getString(R.string.chat_title));
+        setTopRightButton(R.drawable.chat_menu_btn);
+        topRightBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showAddPopWindow();
+            }
+        });
     }
+
+    @TargetApi(19)
+    private void showAddPopWindow() {
+        LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.tt_chat_add_menu, null);
+        final PopupWindow mPopupWindow = new PopupWindow(view, WindowManager.LayoutParams.WRAP_CONTENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        mPopupWindow.setOutsideTouchable(true);
+        mPopupWindow.setBackgroundDrawable(new ColorDrawable(0x00000000));
+        Resources resource = getActivity().getResources();
+        int width = (int) resource.getDimension(R.dimen.chat_popup_menu);
+        mPopupWindow.setWidth(width);
+        mPopupWindow.showAsDropDown(topRightBtn, 0, 0, Gravity.BOTTOM | Gravity.RIGHT);
+
+        ListView lists = (ListView)view.findViewById(R.id.listview_chat_add);
+        lists.setAdapter(new AddChatAdapter(getActivity()));
+        lists.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity(), AddFriendActivity.class);
+                //intent.putExtra(IntentConstant.KEY_PEERID, contactId);
+                startActivity(intent);
+               // getActivity().overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_out_right);
+                mPopupWindow.dismiss();
+            }
+        });
+    }
+
     private void initContactListView() {
         contactListView = (ListView) curView.findViewById(R.id.ContactListView);
         contactListView.setOnItemClickListener(this);
