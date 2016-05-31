@@ -1,7 +1,8 @@
 package com.mogujie.tt.imservice.manager;
 
+import com.mogujie.tt.config.SysConstant;
 import com.mogujie.tt.protobuf.IMBaseDefine;
-import com.mogujie.tt.protobuf.IMFriend;
+import com.mogujie.tt.protobuf.IMBuddy;
 import com.mogujie.tt.utils.Logger;
 
 /**
@@ -30,25 +31,28 @@ public class IMFriendManager extends  IMManager{
 
     }
 
-    public void reqUserInfo(String nickName) {
+    public void reqSimpleUserInfo(String nickName, int beginPos) {
         logger.d("reqUserInfo: nickName = %s", nickName);
 
-        IMFriend.IMGetUserInfoReq req = IMFriend.IMGetUserInfoReq.newBuilder()
+        IMBuddy.IMGetSimpleUserInfoReq req = IMBuddy.IMGetSimpleUserInfoReq.newBuilder()
                 .setNickName(nickName)
+                .setMaxSize(SysConstant.MAX_SIMPLE_USERINFO)
+                .setBeginPos(beginPos)
                 .build();
 
-        int sid = IMBaseDefine.ServiceID.SID_GROUP_VALUE;
-        int cid = IMBaseDefine.FriendCmdID.CID_GETUSER_INFO_REQ_VALUE;
+        int sid = IMBaseDefine.ServiceID.SID_BUDDY_LIST_VALUE;
+        int cid = IMBaseDefine.FriendCmdID.CID_GET_SIMPLE_USER_INFO_REQ_VALUE;
         imSocketManager.sendRequest(req, sid, cid);
+    }
+
+    public void onRepSimpleUserInfo(IMBuddy.IMGetSimpleUserInfoRsp simpleUsers) {
+
     }
 
     public void resMakeFriend(int uid, String nickName) {
         logger.d("resMakeFriend:uid = %d, nickName = %s", uid, nickName);
 
-       IMFriend.IMMakeFriendReq req = IMFriend.IMMakeFriendReq.newBuilder()
-               .setUserAccount(uid)
-               .setAttachMsg(nickName)
-               .build();
+
 
 
 

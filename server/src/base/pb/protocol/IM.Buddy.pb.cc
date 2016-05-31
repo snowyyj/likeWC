@@ -38,6 +38,8 @@ void protobuf_ShutdownFile_IM_2eBuddy_2eproto() {
   delete IMChangeSignInfoReq::default_instance_;
   delete IMChangeSignInfoRsp::default_instance_;
   delete IMSignInfoChangedNotify::default_instance_;
+  delete IMGetSimpleUserInfoReq::default_instance_;
+  delete IMGetSimpleUserInfoRsp::default_instance_;
 }
 
 #ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
@@ -74,6 +76,8 @@ void protobuf_AddDesc_IM_2eBuddy_2eproto() {
   IMChangeSignInfoReq::default_instance_ = new IMChangeSignInfoReq();
   IMChangeSignInfoRsp::default_instance_ = new IMChangeSignInfoRsp();
   IMSignInfoChangedNotify::default_instance_ = new IMSignInfoChangedNotify();
+  IMGetSimpleUserInfoReq::default_instance_ = new IMGetSimpleUserInfoReq();
+  IMGetSimpleUserInfoRsp::default_instance_ = new IMGetSimpleUserInfoRsp();
   IMRecentContactSessionReq::default_instance_->InitAsDefaultInstance();
   IMRecentContactSessionRsp::default_instance_->InitAsDefaultInstance();
   IMUserStatNotify::default_instance_->InitAsDefaultInstance();
@@ -95,6 +99,8 @@ void protobuf_AddDesc_IM_2eBuddy_2eproto() {
   IMChangeSignInfoReq::default_instance_->InitAsDefaultInstance();
   IMChangeSignInfoRsp::default_instance_->InitAsDefaultInstance();
   IMSignInfoChangedNotify::default_instance_->InitAsDefaultInstance();
+  IMGetSimpleUserInfoReq::default_instance_->InitAsDefaultInstance();
+  IMGetSimpleUserInfoRsp::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_IM_2eBuddy_2eproto);
 }
 
@@ -5932,6 +5938,596 @@ void IMSignInfoChangedNotify::Swap(IMSignInfoChangedNotify* other) {
 
 ::std::string IMSignInfoChangedNotify::GetTypeName() const {
   return "IM.Buddy.IMSignInfoChangedNotify";
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int IMGetSimpleUserInfoReq::kNickNameFieldNumber;
+const int IMGetSimpleUserInfoReq::kMaxSizeFieldNumber;
+const int IMGetSimpleUserInfoReq::kBeginPosFieldNumber;
+const int IMGetSimpleUserInfoReq::kAttachDataFieldNumber;
+#endif  // !_MSC_VER
+
+IMGetSimpleUserInfoReq::IMGetSimpleUserInfoReq()
+  : ::google::protobuf::MessageLite() {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:IM.Buddy.IMGetSimpleUserInfoReq)
+}
+
+void IMGetSimpleUserInfoReq::InitAsDefaultInstance() {
+}
+
+IMGetSimpleUserInfoReq::IMGetSimpleUserInfoReq(const IMGetSimpleUserInfoReq& from)
+  : ::google::protobuf::MessageLite() {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:IM.Buddy.IMGetSimpleUserInfoReq)
+}
+
+void IMGetSimpleUserInfoReq::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
+  _cached_size_ = 0;
+  nick_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  max_size_ = 0u;
+  begin_pos_ = 0u;
+  attach_data_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+IMGetSimpleUserInfoReq::~IMGetSimpleUserInfoReq() {
+  // @@protoc_insertion_point(destructor:IM.Buddy.IMGetSimpleUserInfoReq)
+  SharedDtor();
+}
+
+void IMGetSimpleUserInfoReq::SharedDtor() {
+  if (nick_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete nick_name_;
+  }
+  if (attach_data_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete attach_data_;
+  }
+  #ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  if (this != &default_instance()) {
+  #else
+  if (this != default_instance_) {
+  #endif
+  }
+}
+
+void IMGetSimpleUserInfoReq::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const IMGetSimpleUserInfoReq& IMGetSimpleUserInfoReq::default_instance() {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_AddDesc_IM_2eBuddy_2eproto();
+#else
+  if (default_instance_ == NULL) protobuf_AddDesc_IM_2eBuddy_2eproto();
+#endif
+  return *default_instance_;
+}
+
+IMGetSimpleUserInfoReq* IMGetSimpleUserInfoReq::default_instance_ = NULL;
+
+IMGetSimpleUserInfoReq* IMGetSimpleUserInfoReq::New() const {
+  return new IMGetSimpleUserInfoReq;
+}
+
+void IMGetSimpleUserInfoReq::Clear() {
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<IMGetSimpleUserInfoReq*>(16)->f) - \
+   reinterpret_cast<char*>(16))
+
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  if (_has_bits_[0 / 32] & 15) {
+    ZR_(max_size_, begin_pos_);
+    if (has_nick_name()) {
+      if (nick_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        nick_name_->clear();
+      }
+    }
+    if (has_attach_data()) {
+      if (attach_data_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        attach_data_->clear();
+      }
+    }
+  }
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->clear();
+}
+
+bool IMGetSimpleUserInfoReq::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::io::StringOutputStream unknown_fields_string(
+      mutable_unknown_fields());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_string);
+  // @@protoc_insertion_point(parse_start:IM.Buddy.IMGetSimpleUserInfoReq)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(16383);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required string nick_name = 1;
+      case 1: {
+        if (tag == 10) {
+          DO_(::google::protobuf::internal::WireFormatLite::ReadString(
+                input, this->mutable_nick_name()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(16)) goto parse_max_size;
+        break;
+      }
+
+      // required uint32 max_size = 2;
+      case 2: {
+        if (tag == 16) {
+         parse_max_size:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &max_size_)));
+          set_has_max_size();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(24)) goto parse_begin_pos;
+        break;
+      }
+
+      // required uint32 begin_pos = 3;
+      case 3: {
+        if (tag == 24) {
+         parse_begin_pos:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &begin_pos_)));
+          set_has_begin_pos();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(162)) goto parse_attach_data;
+        break;
+      }
+
+      // optional bytes attach_data = 20;
+      case 20: {
+        if (tag == 162) {
+         parse_attach_data:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_attach_data()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+            input, tag, &unknown_fields_stream));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:IM.Buddy.IMGetSimpleUserInfoReq)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:IM.Buddy.IMGetSimpleUserInfoReq)
+  return false;
+#undef DO_
+}
+
+void IMGetSimpleUserInfoReq::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:IM.Buddy.IMGetSimpleUserInfoReq)
+  // required string nick_name = 1;
+  if (has_nick_name()) {
+    ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
+      1, this->nick_name(), output);
+  }
+
+  // required uint32 max_size = 2;
+  if (has_max_size()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(2, this->max_size(), output);
+  }
+
+  // required uint32 begin_pos = 3;
+  if (has_begin_pos()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(3, this->begin_pos(), output);
+  }
+
+  // optional bytes attach_data = 20;
+  if (has_attach_data()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
+      20, this->attach_data(), output);
+  }
+
+  output->WriteRaw(unknown_fields().data(),
+                   unknown_fields().size());
+  // @@protoc_insertion_point(serialize_end:IM.Buddy.IMGetSimpleUserInfoReq)
+}
+
+int IMGetSimpleUserInfoReq::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // required string nick_name = 1;
+    if (has_nick_name()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->nick_name());
+    }
+
+    // required uint32 max_size = 2;
+    if (has_max_size()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->max_size());
+    }
+
+    // required uint32 begin_pos = 3;
+    if (has_begin_pos()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->begin_pos());
+    }
+
+    // optional bytes attach_data = 20;
+    if (has_attach_data()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->attach_data());
+    }
+
+  }
+  total_size += unknown_fields().size();
+
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void IMGetSimpleUserInfoReq::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const IMGetSimpleUserInfoReq*>(&from));
+}
+
+void IMGetSimpleUserInfoReq::MergeFrom(const IMGetSimpleUserInfoReq& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_nick_name()) {
+      set_nick_name(from.nick_name());
+    }
+    if (from.has_max_size()) {
+      set_max_size(from.max_size());
+    }
+    if (from.has_begin_pos()) {
+      set_begin_pos(from.begin_pos());
+    }
+    if (from.has_attach_data()) {
+      set_attach_data(from.attach_data());
+    }
+  }
+  mutable_unknown_fields()->append(from.unknown_fields());
+}
+
+void IMGetSimpleUserInfoReq::CopyFrom(const IMGetSimpleUserInfoReq& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool IMGetSimpleUserInfoReq::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+
+  return true;
+}
+
+void IMGetSimpleUserInfoReq::Swap(IMGetSimpleUserInfoReq* other) {
+  if (other != this) {
+    std::swap(nick_name_, other->nick_name_);
+    std::swap(max_size_, other->max_size_);
+    std::swap(begin_pos_, other->begin_pos_);
+    std::swap(attach_data_, other->attach_data_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.swap(other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::std::string IMGetSimpleUserInfoReq::GetTypeName() const {
+  return "IM.Buddy.IMGetSimpleUserInfoReq";
+}
+
+
+// ===================================================================
+
+#ifndef _MSC_VER
+const int IMGetSimpleUserInfoRsp::kUserIdFieldNumber;
+const int IMGetSimpleUserInfoRsp::kUserInfoListFieldNumber;
+const int IMGetSimpleUserInfoRsp::kAttachDataFieldNumber;
+#endif  // !_MSC_VER
+
+IMGetSimpleUserInfoRsp::IMGetSimpleUserInfoRsp()
+  : ::google::protobuf::MessageLite() {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:IM.Buddy.IMGetSimpleUserInfoRsp)
+}
+
+void IMGetSimpleUserInfoRsp::InitAsDefaultInstance() {
+}
+
+IMGetSimpleUserInfoRsp::IMGetSimpleUserInfoRsp(const IMGetSimpleUserInfoRsp& from)
+  : ::google::protobuf::MessageLite() {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:IM.Buddy.IMGetSimpleUserInfoRsp)
+}
+
+void IMGetSimpleUserInfoRsp::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
+  _cached_size_ = 0;
+  user_id_ = 0u;
+  attach_data_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+}
+
+IMGetSimpleUserInfoRsp::~IMGetSimpleUserInfoRsp() {
+  // @@protoc_insertion_point(destructor:IM.Buddy.IMGetSimpleUserInfoRsp)
+  SharedDtor();
+}
+
+void IMGetSimpleUserInfoRsp::SharedDtor() {
+  if (attach_data_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete attach_data_;
+  }
+  #ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  if (this != &default_instance()) {
+  #else
+  if (this != default_instance_) {
+  #endif
+  }
+}
+
+void IMGetSimpleUserInfoRsp::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+}
+const IMGetSimpleUserInfoRsp& IMGetSimpleUserInfoRsp::default_instance() {
+#ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
+  protobuf_AddDesc_IM_2eBuddy_2eproto();
+#else
+  if (default_instance_ == NULL) protobuf_AddDesc_IM_2eBuddy_2eproto();
+#endif
+  return *default_instance_;
+}
+
+IMGetSimpleUserInfoRsp* IMGetSimpleUserInfoRsp::default_instance_ = NULL;
+
+IMGetSimpleUserInfoRsp* IMGetSimpleUserInfoRsp::New() const {
+  return new IMGetSimpleUserInfoRsp;
+}
+
+void IMGetSimpleUserInfoRsp::Clear() {
+  if (_has_bits_[0 / 32] & 5) {
+    user_id_ = 0u;
+    if (has_attach_data()) {
+      if (attach_data_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        attach_data_->clear();
+      }
+    }
+  }
+  user_info_list_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->clear();
+}
+
+bool IMGetSimpleUserInfoRsp::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  ::google::protobuf::io::StringOutputStream unknown_fields_string(
+      mutable_unknown_fields());
+  ::google::protobuf::io::CodedOutputStream unknown_fields_stream(
+      &unknown_fields_string);
+  // @@protoc_insertion_point(parse_start:IM.Buddy.IMGetSimpleUserInfoRsp)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(16383);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // required uint32 user_id = 1;
+      case 1: {
+        if (tag == 8) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::uint32, ::google::protobuf::internal::WireFormatLite::TYPE_UINT32>(
+                 input, &user_id_)));
+          set_has_user_id();
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_user_info_list;
+        break;
+      }
+
+      // repeated .IM.BaseDefine.UserInfo user_info_list = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_user_info_list:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
+                input, add_user_info_list()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_user_info_list;
+        if (input->ExpectTag(162)) goto parse_attach_data;
+        break;
+      }
+
+      // optional bytes attach_data = 20;
+      case 20: {
+        if (tag == 162) {
+         parse_attach_data:
+          DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
+                input, this->mutable_attach_data()));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(
+            input, tag, &unknown_fields_stream));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:IM.Buddy.IMGetSimpleUserInfoRsp)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:IM.Buddy.IMGetSimpleUserInfoRsp)
+  return false;
+#undef DO_
+}
+
+void IMGetSimpleUserInfoRsp::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:IM.Buddy.IMGetSimpleUserInfoRsp)
+  // required uint32 user_id = 1;
+  if (has_user_id()) {
+    ::google::protobuf::internal::WireFormatLite::WriteUInt32(1, this->user_id(), output);
+  }
+
+  // repeated .IM.BaseDefine.UserInfo user_info_list = 2;
+  for (int i = 0; i < this->user_info_list_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteMessage(
+      2, this->user_info_list(i), output);
+  }
+
+  // optional bytes attach_data = 20;
+  if (has_attach_data()) {
+    ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
+      20, this->attach_data(), output);
+  }
+
+  output->WriteRaw(unknown_fields().data(),
+                   unknown_fields().size());
+  // @@protoc_insertion_point(serialize_end:IM.Buddy.IMGetSimpleUserInfoRsp)
+}
+
+int IMGetSimpleUserInfoRsp::ByteSize() const {
+  int total_size = 0;
+
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // required uint32 user_id = 1;
+    if (has_user_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::UInt32Size(
+          this->user_id());
+    }
+
+    // optional bytes attach_data = 20;
+    if (has_attach_data()) {
+      total_size += 2 +
+        ::google::protobuf::internal::WireFormatLite::BytesSize(
+          this->attach_data());
+    }
+
+  }
+  // repeated .IM.BaseDefine.UserInfo user_info_list = 2;
+  total_size += 1 * this->user_info_list_size();
+  for (int i = 0; i < this->user_info_list_size(); i++) {
+    total_size +=
+      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+        this->user_info_list(i));
+  }
+
+  total_size += unknown_fields().size();
+
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void IMGetSimpleUserInfoRsp::CheckTypeAndMergeFrom(
+    const ::google::protobuf::MessageLite& from) {
+  MergeFrom(*::google::protobuf::down_cast<const IMGetSimpleUserInfoRsp*>(&from));
+}
+
+void IMGetSimpleUserInfoRsp::MergeFrom(const IMGetSimpleUserInfoRsp& from) {
+  GOOGLE_CHECK_NE(&from, this);
+  user_info_list_.MergeFrom(from.user_info_list_);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_user_id()) {
+      set_user_id(from.user_id());
+    }
+    if (from.has_attach_data()) {
+      set_attach_data(from.attach_data());
+    }
+  }
+  mutable_unknown_fields()->append(from.unknown_fields());
+}
+
+void IMGetSimpleUserInfoRsp::CopyFrom(const IMGetSimpleUserInfoRsp& from) {
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool IMGetSimpleUserInfoRsp::IsInitialized() const {
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+
+  if (!::google::protobuf::internal::AllAreInitialized(this->user_info_list())) return false;
+  return true;
+}
+
+void IMGetSimpleUserInfoRsp::Swap(IMGetSimpleUserInfoRsp* other) {
+  if (other != this) {
+    std::swap(user_id_, other->user_id_);
+    user_info_list_.Swap(&other->user_info_list_);
+    std::swap(attach_data_, other->attach_data_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.swap(other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
+}
+
+::std::string IMGetSimpleUserInfoRsp::GetTypeName() const {
+  return "IM.Buddy.IMGetSimpleUserInfoRsp";
 }
 
 

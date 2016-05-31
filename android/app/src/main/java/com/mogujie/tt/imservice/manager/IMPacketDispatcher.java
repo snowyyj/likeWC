@@ -78,7 +78,10 @@ public class IMPacketDispatcher {
                 IMBuddy.IMDepartmentRsp departmentRsp = IMBuddy.IMDepartmentRsp.parseFrom(buffer);
                 IMContactManager.instance().onRepDepartment(departmentRsp);
                 return;
-
+            case IMBaseDefine.FriendCmdID.CID_GET_SIMPLE_USER_INFO_RSP_VALUE:
+                IMBuddy.IMGetSimpleUserInfoRsp simpleUserRsp = IMBuddy.IMGetSimpleUserInfoRsp.parseFrom(buffer);
+                IMFriendManager.getInstance().onRepSimpleUserInfo(simpleUserRsp);
+                return;
         }
         } catch (IOException e) {
             logger.e("buddyPacketDispatcher# error,cid:%d",commandId);

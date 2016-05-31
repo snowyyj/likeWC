@@ -264,6 +264,7 @@ bool FriendCmdID_IsValid(int value) {
   switch(value) {
     case 2049:
     case 2050:
+    case 2051:
       return true;
     default:
       return false;

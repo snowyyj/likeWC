@@ -49,6 +49,9 @@ private:
     
     void _HandlePushShieldResponse(CImPdu* pPdu);
     void _HandleQueryPushShieldResponse(CImPdu* pPdu);
+
+	//friend about
+	void _HandleRequestSimpleUserInfoResponse(CImPdu* pPdu);
 private:
 	bool 		m_bOpen;
 	uint32_t	m_serv_idx;

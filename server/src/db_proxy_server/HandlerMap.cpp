@@ -107,6 +107,13 @@ void CHandlerMap::Init()
     m_handler_map.insert(make_pair(uint32_t(CID_FILE_ADD_OFFLINE_REQ), DB_PROXY::addOfflineFile));
     m_handler_map.insert(make_pair(uint32_t(CID_FILE_DEL_OFFLINE_REQ), DB_PROXY::delOfflineFile));
 
+
+	// friend
+	m_handler_map.insert(make_pair(uint32_t(CID_GET_SIMPLE_USER_INFO_RSP), DB_PROXY::getSimpleUserInfo));
+
+
+	
+
 }
 
 /**

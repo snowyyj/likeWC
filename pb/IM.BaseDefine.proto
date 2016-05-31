@@ -138,8 +138,10 @@ enum OtherCmdID{
 }
 
 enum FriendCmdID{
-	CID_GETUSER_INFO_REQ					= 0x0801;
-	CID_MakeFriend_REQ						= 0x0802;
+	CID_GET_SIMPLE_USER_INFO_REQ			= 0x0801;
+	CID_GET_SIMPLE_USER_INFO_RSP			= 0x0802;
+	
+	CID_MakeFriend_REQ						= 0x0803;
 }
 
 enum ResultType{

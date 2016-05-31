@@ -83,7 +83,7 @@ private:
     void _HandleQueryPushShieldRequest(CImPdu* pPdu);
 
 	//friend about
-	void _HandleClientGetUserInfo(CImPdu* pPdu);
+	void _HandleClientGetSimpleUserInfo(CImPdu* pPdu);
 	
 private:
     string          m_login_name;        //登录名拼音

@@ -20,6 +20,7 @@
 #include "IM.Group.pb.h"
 #include "IM.Server.pb.h"
 #include "IM.SwitchService.pb.h"
+#include "IM.Friend.pb.h"
 #include "public_define.h"
 #include "ImPduBase.h"
 using namespace IM::BaseDefine;
@@ -378,8 +379,8 @@ void CMsgConn::HandlePdu(CImPdu* pPdu)
             break;
         case CID_FILE_DEL_OFFLINE_REQ:
             s_file_handler->HandleClientFileDelOfflineReq(this, pPdu);
-		case CID_GETUSER_INFO_REQ:
-				
+		case CID_GET_SIMPLE_USER_INFO_REQ:
+			_HandleClientGetSimpleUserInfo(pPdu);
             break;
         default:
             log("wrong msg, cmd id=%d, user id=%u. ", pPdu->GetCommandId(), GetUserId());
@@ -998,11 +999,19 @@ void CMsgConn::_HandleQueryPushShieldRequest(CImPdu* pPdu) {
     }
 }
 
-void CMsgConn::_HandleClientGetUserInfo(CImPdu* pPdu) {
+void CMsgConn::_HandleClientGetSimpleUserInfo(CImPdu* pPdu) {
 	log("_HandleClientGetUserInfo");
 	IM::Friend::IMGetUserInfoReq msg;
 	CHECK_PB_PARSE_MSG(msg.ParseFromArray(pPdu->GetBodyData(), pPdu->GetBodyLength()));
-	log("nick name = %s", msg.nick_name().c_str());
+	CDBServConn* pDBConn = get_db_serv_conn();
+    if (pDBConn) {
+        msg.set_user_id(GetUserId());
+        CPduAttachData attach(ATTACH_TYPE_HANDLE, m_handle,0, NULL);
+        msg.set_attach_data(attach.GetBuffer(), attach.GetLength());
+        
+        pPdu->SetPBMsg(&msg);
+        pDBConn->SendPdu(pPdu);
+    }
 	
 	
 }

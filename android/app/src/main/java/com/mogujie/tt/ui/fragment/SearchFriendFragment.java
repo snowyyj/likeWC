@@ -88,7 +88,7 @@ public class SearchFriendFragment extends TTBaseFragment {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                IMFriendManager.getInstance().reqUserInfo(mAccountName);
+                IMFriendManager.getInstance().reqSimpleUserInfo(mAccountName, 0);
             }
         });
 

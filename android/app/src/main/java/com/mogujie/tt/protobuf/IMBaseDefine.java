@@ -1511,31 +1511,40 @@ public final class IMBaseDefine {
   public enum FriendCmdID
       implements com.google.protobuf.Internal.EnumLite {
     /**
-     * <code>CID_GETUSER_INFO_REQ = 2049;</code>
+     * <code>CID_GET_SIMPLE_USER_INFO_REQ = 2049;</code>
      */
-    CID_GETUSER_INFO_REQ(0, 2049),
+    CID_GET_SIMPLE_USER_INFO_REQ(0, 2049),
     /**
-     * <code>CID_MakeFriend_REQ = 2050;</code>
+     * <code>CID_GET_SIMPLE_USER_INFO_RSP = 2050;</code>
      */
-    CID_MakeFriend_REQ(1, 2050),
+    CID_GET_SIMPLE_USER_INFO_RSP(1, 2050),
+    /**
+     * <code>CID_MakeFriend_REQ = 2051;</code>
+     */
+    CID_MakeFriend_REQ(2, 2051),
     ;
 
     /**
-     * <code>CID_GETUSER_INFO_REQ = 2049;</code>
+     * <code>CID_GET_SIMPLE_USER_INFO_REQ = 2049;</code>
      */
-    public static final int CID_GETUSER_INFO_REQ_VALUE = 2049;
+    public static final int CID_GET_SIMPLE_USER_INFO_REQ_VALUE = 2049;
     /**
-     * <code>CID_MakeFriend_REQ = 2050;</code>
+     * <code>CID_GET_SIMPLE_USER_INFO_RSP = 2050;</code>
      */
-    public static final int CID_MakeFriend_REQ_VALUE = 2050;
+    public static final int CID_GET_SIMPLE_USER_INFO_RSP_VALUE = 2050;
+    /**
+     * <code>CID_MakeFriend_REQ = 2051;</code>
+     */
+    public static final int CID_MakeFriend_REQ_VALUE = 2051;
 
 
     public final int getNumber() { return value; }
 
     public static FriendCmdID valueOf(int value) {
       switch (value) {
-        case 2049: return CID_GETUSER_INFO_REQ;
-        case 2050: return CID_MakeFriend_REQ;
+        case 2049: return CID_GET_SIMPLE_USER_INFO_REQ;
+        case 2050: return CID_GET_SIMPLE_USER_INFO_RSP;
+        case 2051: return CID_MakeFriend_REQ;
         default: return null;
       }
     }

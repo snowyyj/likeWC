@@ -273,10 +273,12 @@ void CDBServConn::HandlePdu(CImPdu* pPdu)
             s_group_chat->HandleGroupShieldGroupResponse(pPdu);
             break;
         
-        case CID_FILE_HAS_OFFLINE_RES:
+        case CID_GET_SIMPLE_USER_INFO_RSP:
             s_file_handler->HandleFileHasOfflineRes(pPdu);
             break;
-        
+        case CID_GET_SIMPLE_USER_INFO_REQ:
+			_HandleRequestSimpleUserInfoResponse(pPdu);
+			break;
         default:
             log("db server, wrong cmd id=%d ", pPdu->GetCommandId());
 	}
@@ -913,3 +915,25 @@ void CDBServConn::_HandleQueryPushShieldResponse(CImPdu* pPdu) {
         log("_HandleQueryPushShieldResponse: can't found msg_conn by user_id = %u, handle = %u", user_id, handle);
     }
 }
+
+
+void CDBServConn::_HandleRequestSimpleUserInfoResponse(CImPdu* pPdu)
+{
+	IM::Buddy::IMGetSimpleUserInfoRsp msgResp;
+	CHECK_PB_PARSE_MSG(msgResp.ParseFromArray(pPdu->GetBodyData(), pPdu->GetBodyLength()));
+	
+	uint32_t user_id = msg.user_id();
+    uint32_t user_cnt = msg.user_info_list_size();
+    CDbAttachData attach_data((uchar_t*)msg.attach_data().c_str(), msg.attach_data().length());
+	uint32_t handle = attach_data.GetHandle();
+    
+    log("_HandleRequestSimpleUserInfoResponse, user_id=%u, user_cnt=%u.", user_id, user_cnt);
+    
+    CMsgConn* pMsgConn = CImUserManager::GetInstance()->GetMsgConnByHandle(user_id, handle);
+    if (pMsgConn && pMsgConn->IsOpen()) {
+        msg.clear_attach_data();
+        pPdu->SetPBMsg(&msg);
+        pMsgConn->SendPdu(pPdu);
+    }
+}
+

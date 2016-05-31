@@ -209,11 +209,12 @@ const OtherCmdID OtherCmdID_MAX = CID_OTHER_FILE_SERVER_IP_RSP;
 const int OtherCmdID_ARRAYSIZE = OtherCmdID_MAX + 1;
 
 enum FriendCmdID {
-  CID_GETUSER_INFO_REQ = 2049,
-  CID_MakeFriend_REQ = 2050
+  CID_GET_SIMPLE_USER_INFO_REQ = 2049,
+  CID_GET_SIMPLE_USER_INFO_RSP = 2050,
+  CID_MakeFriend_REQ = 2051
 };
 bool FriendCmdID_IsValid(int value);
-const FriendCmdID FriendCmdID_MIN = CID_GETUSER_INFO_REQ;
+const FriendCmdID FriendCmdID_MIN = CID_GET_SIMPLE_USER_INFO_REQ;
 const FriendCmdID FriendCmdID_MAX = CID_MakeFriend_REQ;
 const int FriendCmdID_ARRAYSIZE = FriendCmdID_MAX + 1;
 
