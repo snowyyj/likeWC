@@ -116,11 +116,10 @@ void CUserModel::getUsers(list<uint32_t> lsIds, list<IM::BaseDefine::UserInfo> &
                 cUser.set_user_tel(pResultSet->GetString("phone"));
                 cUser.set_email(pResultSet->GetString("email"));
                 cUser.set_avatar_url(pResultSet->GetString("avatar"));
-		cUser.set_sign_info(pResultSet->GetString("sign_info"));
+		    cUser.set_sign_info(pResultSet->GetString("sign_info"));
              
-                cUser.set_department_id(pResultSet->GetInt("departId"));
-  		 cUser.set_department_id(pResultSet->GetInt("departId"));
-                cUser.set_status(pResultSet->GetInt("status"));
+  		    cUser.set_department_id(pResultSet->GetInt("departId"));
+              cUser.set_status(pResultSet->GetInt("status"));
                 lsUsers.push_back(cUser);
             }
             delete pResultSet;
