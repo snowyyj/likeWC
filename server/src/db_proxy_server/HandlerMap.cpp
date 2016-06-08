@@ -20,6 +20,7 @@
 #include "business/DepartAction.h"
 #include "business/FileAction.h"
 #include "IM.BaseDefine.pb.h"
+#include "business/FriendAction.h"
 
 using namespace IM::BaseDefine;
 
@@ -109,7 +110,7 @@ void CHandlerMap::Init()
 
 
 	// friend
-	m_handler_map.insert(make_pair(uint32_t(CID_GET_SIMPLE_USER_INFO_RSP), DB_PROXY::getSimpleUserInfo));
+	m_handler_map.insert(make_pair(uint32_t(CID_GET_SIMPLE_USER_INFO_REQ), DB_PROXY::getSimpleUserInfo));
 
 
 	

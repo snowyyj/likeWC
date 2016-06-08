@@ -20,7 +20,6 @@
 #include "IM.Group.pb.h"
 #include "IM.Server.pb.h"
 #include "IM.SwitchService.pb.h"
-#include "IM.Friend.pb.h"
 #include "public_define.h"
 #include "ImPduBase.h"
 using namespace IM::BaseDefine;
@@ -1001,7 +1000,7 @@ void CMsgConn::_HandleQueryPushShieldRequest(CImPdu* pPdu) {
 
 void CMsgConn::_HandleClientGetSimpleUserInfo(CImPdu* pPdu) {
 	log("_HandleClientGetUserInfo");
-	IM::Friend::IMGetUserInfoReq msg;
+	IM::Buddy::IMGetSimpleUserInfoReq msg;
 	CHECK_PB_PARSE_MSG(msg.ParseFromArray(pPdu->GetBodyData(), pPdu->GetBodyLength()));
 	CDBServConn* pDBConn = get_db_serv_conn();
     if (pDBConn) {

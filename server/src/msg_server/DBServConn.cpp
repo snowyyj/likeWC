@@ -273,10 +273,10 @@ void CDBServConn::HandlePdu(CImPdu* pPdu)
             s_group_chat->HandleGroupShieldGroupResponse(pPdu);
             break;
         
-        case CID_GET_SIMPLE_USER_INFO_RSP:
+        case CID_FILE_HAS_OFFLINE_RES:
             s_file_handler->HandleFileHasOfflineRes(pPdu);
             break;
-        case CID_GET_SIMPLE_USER_INFO_REQ:
+        case  CID_GET_SIMPLE_USER_INFO_RSP:
 			_HandleRequestSimpleUserInfoResponse(pPdu);
 			break;
         default:
@@ -919,20 +919,21 @@ void CDBServConn::_HandleQueryPushShieldResponse(CImPdu* pPdu) {
 
 void CDBServConn::_HandleRequestSimpleUserInfoResponse(CImPdu* pPdu)
 {
-	IM::Buddy::IMGetSimpleUserInfoRsp msgResp;
+        
+    IM::Buddy::IMGetSimpleUserInfoRsp msgResp;
 	CHECK_PB_PARSE_MSG(msgResp.ParseFromArray(pPdu->GetBodyData(), pPdu->GetBodyLength()));
-	
-	uint32_t user_id = msg.user_id();
-    uint32_t user_cnt = msg.user_info_list_size();
-    CDbAttachData attach_data((uchar_t*)msg.attach_data().c_str(), msg.attach_data().length());
+    
+	uint32_t user_id = msgResp.user_id();
+    uint32_t user_cnt = msgResp.user_info_list_size();
+    CDbAttachData attach_data((uchar_t*)msgResp.attach_data().c_str(), msgResp.attach_data().length());
 	uint32_t handle = attach_data.GetHandle();
     
     log("_HandleRequestSimpleUserInfoResponse, user_id=%u, user_cnt=%u.", user_id, user_cnt);
     
     CMsgConn* pMsgConn = CImUserManager::GetInstance()->GetMsgConnByHandle(user_id, handle);
     if (pMsgConn && pMsgConn->IsOpen()) {
-        msg.clear_attach_data();
-        pPdu->SetPBMsg(&msg);
+        msgResp.clear_attach_data();
+        pPdu->SetPBMsg(&msgResp);
         pMsgConn->SendPdu(pPdu);
     }
 }
