@@ -33,8 +33,9 @@ public class IMFriendManager extends  IMManager{
 
     public void reqSimpleUserInfo(String nickName, int beginPos) {
         logger.d("reqUserInfo: nickName = %s", nickName);
-
+        int userId = IMLoginManager.instance().getLoginId();
         IMBuddy.IMGetSimpleUserInfoReq req = IMBuddy.IMGetSimpleUserInfoReq.newBuilder()
+                .setUserId(userId)
                 .setNickName(nickName)
                 .setMaxSize(SysConstant.MAX_SIMPLE_USERINFO)
                 .setBeginPos(beginPos)

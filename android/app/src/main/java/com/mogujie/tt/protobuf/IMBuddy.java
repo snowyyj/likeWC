@@ -13236,34 +13236,43 @@ public final class IMBuddy {
       com.google.protobuf.MessageLiteOrBuilder {
 
     /**
-     * <code>required string nick_name = 1;</code>
+     * <code>required uint32 user_id = 1;</code>
+     */
+    boolean hasUserId();
+    /**
+     * <code>required uint32 user_id = 1;</code>
+     */
+    int getUserId();
+
+    /**
+     * <code>required string nick_name = 2;</code>
      */
     boolean hasNickName();
     /**
-     * <code>required string nick_name = 1;</code>
+     * <code>required string nick_name = 2;</code>
      */
     java.lang.String getNickName();
     /**
-     * <code>required string nick_name = 1;</code>
+     * <code>required string nick_name = 2;</code>
      */
     com.google.protobuf.ByteString
         getNickNameBytes();
 
     /**
-     * <code>required uint32 max_size = 2;</code>
+     * <code>required uint32 max_size = 3;</code>
      */
     boolean hasMaxSize();
     /**
-     * <code>required uint32 max_size = 2;</code>
+     * <code>required uint32 max_size = 3;</code>
      */
     int getMaxSize();
 
     /**
-     * <code>required uint32 begin_pos = 3;</code>
+     * <code>required uint32 begin_pos = 4;</code>
      */
     boolean hasBeginPos();
     /**
-     * <code>required uint32 begin_pos = 3;</code>
+     * <code>required uint32 begin_pos = 4;</code>
      */
     int getBeginPos();
 
@@ -13330,24 +13339,29 @@ public final class IMBuddy {
               }
               break;
             }
-            case 10: {
-              com.google.protobuf.ByteString bs = input.readBytes();
+            case 8: {
               bitField0_ |= 0x00000001;
-              nickName_ = bs;
+              userId_ = input.readUInt32();
               break;
             }
-            case 16: {
+            case 18: {
+              com.google.protobuf.ByteString bs = input.readBytes();
               bitField0_ |= 0x00000002;
-              maxSize_ = input.readUInt32();
+              nickName_ = bs;
               break;
             }
             case 24: {
               bitField0_ |= 0x00000004;
+              maxSize_ = input.readUInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
               beginPos_ = input.readUInt32();
               break;
             }
             case 162: {
-              bitField0_ |= 0x00000008;
+              bitField0_ |= 0x00000010;
               attachData_ = input.readBytes();
               break;
             }
@@ -13385,16 +13399,31 @@ public final class IMBuddy {
     }
 
     private int bitField0_;
-    public static final int NICK_NAME_FIELD_NUMBER = 1;
-    private java.lang.Object nickName_;
+    public static final int USER_ID_FIELD_NUMBER = 1;
+    private int userId_;
     /**
-     * <code>required string nick_name = 1;</code>
+     * <code>required uint32 user_id = 1;</code>
      */
-    public boolean hasNickName() {
+    public boolean hasUserId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>required string nick_name = 1;</code>
+     * <code>required uint32 user_id = 1;</code>
+     */
+    public int getUserId() {
+      return userId_;
+    }
+
+    public static final int NICK_NAME_FIELD_NUMBER = 2;
+    private java.lang.Object nickName_;
+    /**
+     * <code>required string nick_name = 2;</code>
+     */
+    public boolean hasNickName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>required string nick_name = 2;</code>
      */
     public java.lang.String getNickName() {
       java.lang.Object ref = nickName_;
@@ -13411,7 +13440,7 @@ public final class IMBuddy {
       }
     }
     /**
-     * <code>required string nick_name = 1;</code>
+     * <code>required string nick_name = 2;</code>
      */
     public com.google.protobuf.ByteString
         getNickNameBytes() {
@@ -13427,31 +13456,31 @@ public final class IMBuddy {
       }
     }
 
-    public static final int MAX_SIZE_FIELD_NUMBER = 2;
+    public static final int MAX_SIZE_FIELD_NUMBER = 3;
     private int maxSize_;
     /**
-     * <code>required uint32 max_size = 2;</code>
+     * <code>required uint32 max_size = 3;</code>
      */
     public boolean hasMaxSize() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     /**
-     * <code>required uint32 max_size = 2;</code>
+     * <code>required uint32 max_size = 3;</code>
      */
     public int getMaxSize() {
       return maxSize_;
     }
 
-    public static final int BEGIN_POS_FIELD_NUMBER = 3;
+    public static final int BEGIN_POS_FIELD_NUMBER = 4;
     private int beginPos_;
     /**
-     * <code>required uint32 begin_pos = 3;</code>
+     * <code>required uint32 begin_pos = 4;</code>
      */
     public boolean hasBeginPos() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     /**
-     * <code>required uint32 begin_pos = 3;</code>
+     * <code>required uint32 begin_pos = 4;</code>
      */
     public int getBeginPos() {
       return beginPos_;
@@ -13463,7 +13492,7 @@ public final class IMBuddy {
      * <code>optional bytes attach_data = 20;</code>
      */
     public boolean hasAttachData() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
+      return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     /**
      * <code>optional bytes attach_data = 20;</code>
@@ -13473,6 +13502,7 @@ public final class IMBuddy {
     }
 
     private void initFields() {
+      userId_ = 0;
       nickName_ = "";
       maxSize_ = 0;
       beginPos_ = 0;
@@ -13484,6 +13514,10 @@ public final class IMBuddy {
       if (isInitialized == 1) return true;
       if (isInitialized == 0) return false;
 
+      if (!hasUserId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       if (!hasNickName()) {
         memoizedIsInitialized = 0;
         return false;
@@ -13504,15 +13538,18 @@ public final class IMBuddy {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getNickNameBytes());
+        output.writeUInt32(1, userId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeUInt32(2, maxSize_);
+        output.writeBytes(2, getNickNameBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeUInt32(3, beginPos_);
+        output.writeUInt32(3, maxSize_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeUInt32(4, beginPos_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
         output.writeBytes(20, attachData_);
       }
       output.writeRawBytes(unknownFields);
@@ -13526,17 +13563,21 @@ public final class IMBuddy {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getNickNameBytes());
+          .computeUInt32Size(1, userId_);
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, maxSize_);
+          .computeBytesSize(2, getNickNameBytes());
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, beginPos_);
+          .computeUInt32Size(3, maxSize_);
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(4, beginPos_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
           .computeBytesSize(20, attachData_);
       }
@@ -13638,14 +13679,16 @@ public final class IMBuddy {
 
       public Builder clear() {
         super.clear();
-        nickName_ = "";
+        userId_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
-        maxSize_ = 0;
+        nickName_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        beginPos_ = 0;
+        maxSize_ = 0;
         bitField0_ = (bitField0_ & ~0x00000004);
-        attachData_ = com.google.protobuf.ByteString.EMPTY;
+        beginPos_ = 0;
         bitField0_ = (bitField0_ & ~0x00000008);
+        attachData_ = com.google.protobuf.ByteString.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000010);
         return this;
       }
 
@@ -13672,17 +13715,21 @@ public final class IMBuddy {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.nickName_ = nickName_;
+        result.userId_ = userId_;
         if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.maxSize_ = maxSize_;
+        result.nickName_ = nickName_;
         if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.beginPos_ = beginPos_;
+        result.maxSize_ = maxSize_;
         if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
           to_bitField0_ |= 0x00000008;
+        }
+        result.beginPos_ = beginPos_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
         }
         result.attachData_ = attachData_;
         result.bitField0_ = to_bitField0_;
@@ -13691,8 +13738,11 @@ public final class IMBuddy {
 
       public Builder mergeFrom(com.mogujie.tt.protobuf.IMBuddy.IMGetSimpleUserInfoReq other) {
         if (other == com.mogujie.tt.protobuf.IMBuddy.IMGetSimpleUserInfoReq.getDefaultInstance()) return this;
+        if (other.hasUserId()) {
+          setUserId(other.getUserId());
+        }
         if (other.hasNickName()) {
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
           nickName_ = other.nickName_;
           
         }
@@ -13711,6 +13761,10 @@ public final class IMBuddy {
       }
 
       public final boolean isInitialized() {
+        if (!hasUserId()) {
+          
+          return false;
+        }
         if (!hasNickName()) {
           
           return false;
@@ -13745,15 +13799,47 @@ public final class IMBuddy {
       }
       private int bitField0_;
 
-      private java.lang.Object nickName_ = "";
+      private int userId_ ;
       /**
-       * <code>required string nick_name = 1;</code>
+       * <code>required uint32 user_id = 1;</code>
        */
-      public boolean hasNickName() {
+      public boolean hasUserId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>required string nick_name = 1;</code>
+       * <code>required uint32 user_id = 1;</code>
+       */
+      public int getUserId() {
+        return userId_;
+      }
+      /**
+       * <code>required uint32 user_id = 1;</code>
+       */
+      public Builder setUserId(int value) {
+        bitField0_ |= 0x00000001;
+        userId_ = value;
+        
+        return this;
+      }
+      /**
+       * <code>required uint32 user_id = 1;</code>
+       */
+      public Builder clearUserId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        userId_ = 0;
+        
+        return this;
+      }
+
+      private java.lang.Object nickName_ = "";
+      /**
+       * <code>required string nick_name = 2;</code>
+       */
+      public boolean hasNickName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>required string nick_name = 2;</code>
        */
       public java.lang.String getNickName() {
         java.lang.Object ref = nickName_;
@@ -13770,7 +13856,7 @@ public final class IMBuddy {
         }
       }
       /**
-       * <code>required string nick_name = 1;</code>
+       * <code>required string nick_name = 2;</code>
        */
       public com.google.protobuf.ByteString
           getNickNameBytes() {
@@ -13786,36 +13872,36 @@ public final class IMBuddy {
         }
       }
       /**
-       * <code>required string nick_name = 1;</code>
+       * <code>required string nick_name = 2;</code>
        */
       public Builder setNickName(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  bitField0_ |= 0x00000002;
         nickName_ = value;
         
         return this;
       }
       /**
-       * <code>required string nick_name = 1;</code>
+       * <code>required string nick_name = 2;</code>
        */
       public Builder clearNickName() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         nickName_ = getDefaultInstance().getNickName();
         
         return this;
       }
       /**
-       * <code>required string nick_name = 1;</code>
+       * <code>required string nick_name = 2;</code>
        */
       public Builder setNickNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  bitField0_ |= 0x00000002;
         nickName_ = value;
         
         return this;
@@ -13823,31 +13909,31 @@ public final class IMBuddy {
 
       private int maxSize_ ;
       /**
-       * <code>required uint32 max_size = 2;</code>
+       * <code>required uint32 max_size = 3;</code>
        */
       public boolean hasMaxSize() {
-        return ((bitField0_ & 0x00000002) == 0x00000002);
+        return ((bitField0_ & 0x00000004) == 0x00000004);
       }
       /**
-       * <code>required uint32 max_size = 2;</code>
+       * <code>required uint32 max_size = 3;</code>
        */
       public int getMaxSize() {
         return maxSize_;
       }
       /**
-       * <code>required uint32 max_size = 2;</code>
+       * <code>required uint32 max_size = 3;</code>
        */
       public Builder setMaxSize(int value) {
-        bitField0_ |= 0x00000002;
+        bitField0_ |= 0x00000004;
         maxSize_ = value;
         
         return this;
       }
       /**
-       * <code>required uint32 max_size = 2;</code>
+       * <code>required uint32 max_size = 3;</code>
        */
       public Builder clearMaxSize() {
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000004);
         maxSize_ = 0;
         
         return this;
@@ -13855,31 +13941,31 @@ public final class IMBuddy {
 
       private int beginPos_ ;
       /**
-       * <code>required uint32 begin_pos = 3;</code>
+       * <code>required uint32 begin_pos = 4;</code>
        */
       public boolean hasBeginPos() {
-        return ((bitField0_ & 0x00000004) == 0x00000004);
+        return ((bitField0_ & 0x00000008) == 0x00000008);
       }
       /**
-       * <code>required uint32 begin_pos = 3;</code>
+       * <code>required uint32 begin_pos = 4;</code>
        */
       public int getBeginPos() {
         return beginPos_;
       }
       /**
-       * <code>required uint32 begin_pos = 3;</code>
+       * <code>required uint32 begin_pos = 4;</code>
        */
       public Builder setBeginPos(int value) {
-        bitField0_ |= 0x00000004;
+        bitField0_ |= 0x00000008;
         beginPos_ = value;
         
         return this;
       }
       /**
-       * <code>required uint32 begin_pos = 3;</code>
+       * <code>required uint32 begin_pos = 4;</code>
        */
       public Builder clearBeginPos() {
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000008);
         beginPos_ = 0;
         
         return this;
@@ -13890,7 +13976,7 @@ public final class IMBuddy {
        * <code>optional bytes attach_data = 20;</code>
        */
       public boolean hasAttachData() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
+        return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       /**
        * <code>optional bytes attach_data = 20;</code>
@@ -13905,7 +13991,7 @@ public final class IMBuddy {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000008;
+  bitField0_ |= 0x00000010;
         attachData_ = value;
         
         return this;
@@ -13914,7 +14000,7 @@ public final class IMBuddy {
        * <code>optional bytes attach_data = 20;</code>
        */
       public Builder clearAttachData() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000010);
         attachData_ = getDefaultInstance().getAttachData();
         
         return this;

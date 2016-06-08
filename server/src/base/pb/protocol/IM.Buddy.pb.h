@@ -2590,10 +2590,17 @@ class IMGetSimpleUserInfoReq : public ::google::protobuf::MessageLite {
 
   // accessors -------------------------------------------------------
 
-  // required string nick_name = 1;
+  // required uint32 user_id = 1;
+  inline bool has_user_id() const;
+  inline void clear_user_id();
+  static const int kUserIdFieldNumber = 1;
+  inline ::google::protobuf::uint32 user_id() const;
+  inline void set_user_id(::google::protobuf::uint32 value);
+
+  // required string nick_name = 2;
   inline bool has_nick_name() const;
   inline void clear_nick_name();
-  static const int kNickNameFieldNumber = 1;
+  static const int kNickNameFieldNumber = 2;
   inline const ::std::string& nick_name() const;
   inline void set_nick_name(const ::std::string& value);
   inline void set_nick_name(const char* value);
@@ -2602,17 +2609,17 @@ class IMGetSimpleUserInfoReq : public ::google::protobuf::MessageLite {
   inline ::std::string* release_nick_name();
   inline void set_allocated_nick_name(::std::string* nick_name);
 
-  // required uint32 max_size = 2;
+  // required uint32 max_size = 3;
   inline bool has_max_size() const;
   inline void clear_max_size();
-  static const int kMaxSizeFieldNumber = 2;
+  static const int kMaxSizeFieldNumber = 3;
   inline ::google::protobuf::uint32 max_size() const;
   inline void set_max_size(::google::protobuf::uint32 value);
 
-  // required uint32 begin_pos = 3;
+  // required uint32 begin_pos = 4;
   inline bool has_begin_pos() const;
   inline void clear_begin_pos();
-  static const int kBeginPosFieldNumber = 3;
+  static const int kBeginPosFieldNumber = 4;
   inline ::google::protobuf::uint32 begin_pos() const;
   inline void set_begin_pos(::google::protobuf::uint32 value);
 
@@ -2630,6 +2637,8 @@ class IMGetSimpleUserInfoReq : public ::google::protobuf::MessageLite {
 
   // @@protoc_insertion_point(class_scope:IM.Buddy.IMGetSimpleUserInfoReq)
  private:
+  inline void set_has_user_id();
+  inline void clear_has_user_id();
   inline void set_has_nick_name();
   inline void clear_has_nick_name();
   inline void set_has_max_size();
@@ -2644,9 +2653,10 @@ class IMGetSimpleUserInfoReq : public ::google::protobuf::MessageLite {
   ::google::protobuf::uint32 _has_bits_[1];
   mutable int _cached_size_;
   ::std::string* nick_name_;
+  ::google::protobuf::uint32 user_id_;
   ::google::protobuf::uint32 max_size_;
-  ::google::protobuf::uint32 begin_pos_;
   ::std::string* attach_data_;
+  ::google::protobuf::uint32 begin_pos_;
   #ifdef GOOGLE_PROTOBUF_NO_STATIC_INITIALIZER
   friend void  protobuf_AddDesc_IM_2eBuddy_2eproto_impl();
   #else
@@ -5563,15 +5573,39 @@ inline void IMSignInfoChangedNotify::set_allocated_sign_info(::std::string* sign
 
 // IMGetSimpleUserInfoReq
 
-// required string nick_name = 1;
-inline bool IMGetSimpleUserInfoReq::has_nick_name() const {
+// required uint32 user_id = 1;
+inline bool IMGetSimpleUserInfoReq::has_user_id() const {
   return (_has_bits_[0] & 0x00000001u) != 0;
 }
-inline void IMGetSimpleUserInfoReq::set_has_nick_name() {
+inline void IMGetSimpleUserInfoReq::set_has_user_id() {
   _has_bits_[0] |= 0x00000001u;
 }
-inline void IMGetSimpleUserInfoReq::clear_has_nick_name() {
+inline void IMGetSimpleUserInfoReq::clear_has_user_id() {
   _has_bits_[0] &= ~0x00000001u;
+}
+inline void IMGetSimpleUserInfoReq::clear_user_id() {
+  user_id_ = 0u;
+  clear_has_user_id();
+}
+inline ::google::protobuf::uint32 IMGetSimpleUserInfoReq::user_id() const {
+  // @@protoc_insertion_point(field_get:IM.Buddy.IMGetSimpleUserInfoReq.user_id)
+  return user_id_;
+}
+inline void IMGetSimpleUserInfoReq::set_user_id(::google::protobuf::uint32 value) {
+  set_has_user_id();
+  user_id_ = value;
+  // @@protoc_insertion_point(field_set:IM.Buddy.IMGetSimpleUserInfoReq.user_id)
+}
+
+// required string nick_name = 2;
+inline bool IMGetSimpleUserInfoReq::has_nick_name() const {
+  return (_has_bits_[0] & 0x00000002u) != 0;
+}
+inline void IMGetSimpleUserInfoReq::set_has_nick_name() {
+  _has_bits_[0] |= 0x00000002u;
+}
+inline void IMGetSimpleUserInfoReq::clear_has_nick_name() {
+  _has_bits_[0] &= ~0x00000002u;
 }
 inline void IMGetSimpleUserInfoReq::clear_nick_name() {
   if (nick_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
@@ -5639,15 +5673,15 @@ inline void IMGetSimpleUserInfoReq::set_allocated_nick_name(::std::string* nick_
   // @@protoc_insertion_point(field_set_allocated:IM.Buddy.IMGetSimpleUserInfoReq.nick_name)
 }
 
-// required uint32 max_size = 2;
+// required uint32 max_size = 3;
 inline bool IMGetSimpleUserInfoReq::has_max_size() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
+  return (_has_bits_[0] & 0x00000004u) != 0;
 }
 inline void IMGetSimpleUserInfoReq::set_has_max_size() {
-  _has_bits_[0] |= 0x00000002u;
+  _has_bits_[0] |= 0x00000004u;
 }
 inline void IMGetSimpleUserInfoReq::clear_has_max_size() {
-  _has_bits_[0] &= ~0x00000002u;
+  _has_bits_[0] &= ~0x00000004u;
 }
 inline void IMGetSimpleUserInfoReq::clear_max_size() {
   max_size_ = 0u;
@@ -5663,15 +5697,15 @@ inline void IMGetSimpleUserInfoReq::set_max_size(::google::protobuf::uint32 valu
   // @@protoc_insertion_point(field_set:IM.Buddy.IMGetSimpleUserInfoReq.max_size)
 }
 
-// required uint32 begin_pos = 3;
+// required uint32 begin_pos = 4;
 inline bool IMGetSimpleUserInfoReq::has_begin_pos() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
+  return (_has_bits_[0] & 0x00000008u) != 0;
 }
 inline void IMGetSimpleUserInfoReq::set_has_begin_pos() {
-  _has_bits_[0] |= 0x00000004u;
+  _has_bits_[0] |= 0x00000008u;
 }
 inline void IMGetSimpleUserInfoReq::clear_has_begin_pos() {
-  _has_bits_[0] &= ~0x00000004u;
+  _has_bits_[0] &= ~0x00000008u;
 }
 inline void IMGetSimpleUserInfoReq::clear_begin_pos() {
   begin_pos_ = 0u;
@@ -5689,13 +5723,13 @@ inline void IMGetSimpleUserInfoReq::set_begin_pos(::google::protobuf::uint32 val
 
 // optional bytes attach_data = 20;
 inline bool IMGetSimpleUserInfoReq::has_attach_data() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
+  return (_has_bits_[0] & 0x00000010u) != 0;
 }
 inline void IMGetSimpleUserInfoReq::set_has_attach_data() {
-  _has_bits_[0] |= 0x00000008u;
+  _has_bits_[0] |= 0x00000010u;
 }
 inline void IMGetSimpleUserInfoReq::clear_has_attach_data() {
-  _has_bits_[0] &= ~0x00000008u;
+  _has_bits_[0] &= ~0x00000010u;
 }
 inline void IMGetSimpleUserInfoReq::clear_attach_data() {
   if (attach_data_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {

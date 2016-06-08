@@ -66,9 +66,7 @@ public class IMPacketDispatcher {
 
             case IMBaseDefine.BuddyListCmdID.CID_BUDDY_LIST_REMOVE_SESSION_RES_VALUE:
                 IMBuddy.IMRemoveSessionRsp removeSessionRsp = IMBuddy.IMRemoveSessionRsp.parseFrom(buffer);
-                    IMSessionManager.instance().onRepRemoveSession(removeSessionRsp);
-                return;
-
+                    IMSessionManager.instance().onRepRemoveSession(removeSes
             case IMBaseDefine.BuddyListCmdID.CID_BUDDY_LIST_PC_LOGIN_STATUS_NOTIFY_VALUE:
                 IMBuddy.IMPCLoginStatusNotify statusNotify = IMBuddy.IMPCLoginStatusNotify.parseFrom(buffer);
                 IMLoginManager.instance().onLoginStatusNotify(statusNotify);
